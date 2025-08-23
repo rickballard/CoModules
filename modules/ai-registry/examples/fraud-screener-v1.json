@@ -1,0 +1,24 @@
+{
+  "id": "fraud-screener-v1",
+  "name": "Benefit Fraud Screener",
+  "description": "Triage model to flag potentially fraudulent claims for human review.",
+  "owner": "Dept. of Social Services",
+  "status": "production",
+  "purpose": "Reduce false payouts while minimizing harm to legitimate claimants.",
+  "legal_authority": "Benefit Administration Act, s. 12",
+  "impacted_rights": ["due_process","non-discrimination"],
+  "public_contact": "ai-registry@city.example",
+  "last_reviewed": "2025-08-01",
+  "risk_level": "medium",
+  "deployment_context": "public-facing",
+  "oversight": {
+    "human_in_the_loop": true,
+    "appeals_url": "https://city.example.gov/benefits/appeals"
+  },
+  "dpaat_url": "https://city.example.gov/audits/DP-2025-17.html",
+  "categories": ["benefits","fraud_detection"],
+  "links": {
+    "policy": "https://city.example.gov/policies/ai-benefits",
+    "modelcard": "https://city.example.gov/modelcards/fraud-screener-v1"
+  }
+}
