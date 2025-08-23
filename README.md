@@ -23,7 +23,7 @@ Open Procurement Starter — CSV→OCDS & BODS linkage, DCAT snippets, and one-c
 4. Open Government Partnership
 5. Portal-agnostic (CKAN, Socrata, OpenDataSoft, data.world).
  
-# Reference Targets:
+#3 Reference Targets:
 ckanorg, tylertech.com, Data.gov, The White House, cio.gov, GOV.UK, Open Contracting, datareview.openownership.org, doi-do.github.io
 
 ## Get started: 
