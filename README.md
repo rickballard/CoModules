@@ -6,7 +6,7 @@ Free to test out and use.
 Partners include:
 - InSeed (strategy consultancy, offering hosted validators, workshops, and light implementation).
 - GroupBuild (a policy advocacy organizer)
-- CoCivium (open source community building AI-tools for digital societies)
+- CoCivium (an open source community, building AI-tools for digital societies)
 - Multiple charities and not for profit organizations
 
 ## Modules (alpha):
