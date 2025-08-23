@@ -12,14 +12,8 @@ Partners include:
 ## Modules (alpha):
 
 AI System Registry & Impact Tracker — publish your AI inventory, risks, and mitigations with machine-checkable templates; auto-generated public site & badges. 
-The White House
-cio.gov
-GOV.UK
 
 Open Procurement Starter — CSV→OCDS & BODS linkage, DCAT snippets, and one-command validation with official tools. 
-Open Contracting
-datareview.openownership.org
-doi-do.github.io
 
 ## Why CoModules?
 
@@ -29,10 +23,16 @@ doi-do.github.io
 4. Open Government Partnership
 5. Portal-agnostic (CKAN, Socrata, OpenDataSoft, data.world).
  
-# Reference:
+# Reference Targets:
 ckanorg
 tylertech.com
 Data.gov
+The White House
+cio.gov
+GOV.UK
+Open Contracting
+datareview.openownership.org
+doi-do.github.io
 
 ## Get started: 
 modules/ai-registry/README.md
