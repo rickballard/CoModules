@@ -1,4 +1,4 @@
-name: CI (skeleton)
+name: CI
 on:
   push:
     branches: [ "**" ]
@@ -12,4 +12,14 @@ jobs:
         run: |
           git --version
           ls -laR
-
+  validate-ai-registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install jsonschema
+        run: pip install -r modules/ai-registry/validators/requirements.txt
+      - name: Validate examples
+        run: python modules/ai-registry/validators/validate.py

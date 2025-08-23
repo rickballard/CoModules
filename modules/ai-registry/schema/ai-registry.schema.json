@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/ai-registry.schema.json",
+  "title": "AI System Registry Record (alpha)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id":               { "type": "string", "pattern": "^[a-zA-Z0-9._-]+$" },
+    "name":             { "type": "string", "minLength": 3 },
+    "description":      { "type": "string", "minLength": 10 },
+    "owner":            { "type": "string" },
+    "status":           { "type": "string", "enum": ["planning","testing","production","retired"] },
+    "purpose":          { "type": "string" },
+    "legal_authority":  { "type": "string" },
+    "impacted_rights":  { "type": "array", "items": { "type": "string" } },
+    "public_contact":   { "type": "string", "format": "email" },
+    "last_reviewed":    { "type": "string", "format": "date" },
+    "risk_level":       { "type": "string", "enum": ["low","medium","high"] },
+    "deployment_context": { "type": "string", "enum": ["internal","public-facing"] },
+    "oversight":        {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "human_in_the_loop": { "type": "boolean" },
+        "appeals_url":       { "type": "string", "format": "uri" }
+      },
+      "required": ["human_in_the_loop"]
+    },
+    "dpaat_url":        { "type": "string", "format": "uri" },
+    "categories":       { "type": "array", "items": { "type": "string" } },
+    "links":            {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy":   { "type": "string", "format": "uri" },
+        "code":     { "type": "string", "format": "uri" },
+        "dataset":  { "type": "string", "format": "uri" },
+        "modelcard":{ "type": "string", "format": "uri" }
+      }
+    }
+  },
+  "required": ["id","name","description","owner","status","public_contact","last_reviewed","risk_level","deployment_context","oversight"]
+}
