@@ -1,78 +1,19 @@
 {
-  "generated": "2025-08-23T16:59:14",
+  "generated": "2025-08-23T16:59:15-04:00 (e840287)",
   "forward": {
-    "modules/open-procurement-starter/README.md": [],
-    "GLOSSARY.md": [],
     "docs/business-plan/03-Strategy.md": [],
-    "docs/index/README.md": [
-      "docs/index/.github/pull_request_template.md",
-      "docs/index/cbpp/README.md",
-      "docs/index/docs/business-plan/00-README.md",
-      "docs/index/docs/business-plan/01-Overview.md",
-      "docs/index/docs/business-plan/02-Market-Compete.md",
-      "docs/index/docs/business-plan/03-Strategy.md",
-      "docs/index/docs/business-plan/04-Sales.md",
-      "docs/index/docs/business-plan/05-Marketing.md",
-      "docs/index/docs/business-plan/99-Appendix.md",
-      "docs/index/docs/index/README.md",
-      "docs/index/GLOSSARY.md",
-      "docs/index/modules/ai-registry/README.md",
-      "docs/index/modules/open-procurement-starter/README.md",
-      "docs/index/README.md"
-    ],
-    "docs/business-plan/99-Appendix.md": [],
-    "modules/ai-registry/README.md": [],
-    "docs/business-plan/00-README.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    ".github/pull_request_template.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
     "docs/business-plan/04-Sales.md": [],
-    "docs/business-plan/05-Marketing.md": [],
     "README.md": [],
-    "cbpp/README.md": []
+    "GLOSSARY.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/00-README.md": [],
+    "modules/ai-registry/README.md": [],
+    "docs/business-plan/01-Overview.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    "cbpp/README.md": [],
+    ".github/pull_request_template.md": []
   },
-  "backlinks": {
-    "docs/index/docs/business-plan/03-Strategy.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/.github/pull_request_template.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/modules/open-procurement-starter/README.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/business-plan/00-README.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/cbpp/README.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/modules/ai-registry/README.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/business-plan/05-Marketing.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/index/README.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/README.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/GLOSSARY.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/business-plan/02-Market-Compete.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/business-plan/99-Appendix.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/business-plan/01-Overview.md": [
-      "docs/index/README.md"
-    ],
-    "docs/index/docs/business-plan/04-Sales.md": [
-      "docs/index/README.md"
-    ]
-  }
+  "backlinks": {}
 }
