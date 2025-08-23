@@ -11,4 +11,5 @@ jobs:
       - name: Show tree
         run: |
           git --version
-          tree -a -I ".git"
+          ls -laR
+
