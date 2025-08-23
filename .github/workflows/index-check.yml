@@ -5,17 +5,19 @@ on:
   pull_request:
 jobs:
   index:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build docs index
-        shell: pwsh
-        run: ./tools/build-index.ps1
-      - name: Verify docs/index is up to date
-        shell: pwsh
+      - name: Install PowerShell 7
         run: |
-          git status --porcelain docs/index | % { $_ } | ForEach-Object {
-            Write-Host "::error::docs/index is out of date. Run tools/build-index.ps1 and commit."
-            git --no-pager diff -- docs/index | Out-String | Write-Host
+          sudo apt-get update
+          sudo apt-get install -y powershell
+      - name: Build docs index
+        run: pwsh -NoLogo -NoProfile -File ./tools/build-index.ps1
+      - name: Verify docs/index is up to date
+        run: |
+          if git status --porcelain docs/index | grep .; then
+            echo "::error::docs/index is out of date. Run tools/build-index.ps1 and commit."
+            git --no-pager diff -- docs/index | tail -n +1 || true
             exit 1
-          }
+          fi
