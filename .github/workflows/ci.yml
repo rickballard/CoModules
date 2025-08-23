@@ -1,4 +1,4 @@
-name: CI (skeleton)
+name: CI
 on:
   push:
     branches: [ "**" ]
@@ -12,8 +12,6 @@ jobs:
         run: |
           git --version
           ls -laR
-
-
   validate-ai-registry:
     runs-on: ubuntu-latest
     steps:
