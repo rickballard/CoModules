@@ -1,6 +1,8 @@
 # CoModules
+
+> **Acronyms (hover for meaning):** <abbr title="Civic Best Practices Pipeline">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr> · <abbr title="U.S. Office of Management and Budget Memorandum M-24-10">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr> · <abbr title="Algorithmic Transparency Recording Standard">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr> · <abbr title="Data Catalog Vocabulary">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr> · <abbr title="Open Contracting Data Standard">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr> · <abbr title="Beneficial Ownership Data Standard">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr> · <abbr title="Independent Reporting Mechanism (Open Government Partnership)">System.Func`2[System.Text.RegularExpressions.Match,System.String]</abbr>
 Open-source civic modules with pass/fail validators and public evidence tables.  
-Built to satisfy real standards (OMB M-24-10, ATRS, DCAT-US/DCAT-AP, OCDS, BODS).  
+Built to satisfy real standards (System.Func`2[System.Text.RegularExpressions.Match,System.String], System.Func`2[System.Text.RegularExpressions.Match,System.String], System.Func`2[System.Text.RegularExpressions.Match,System.String]-US/System.Func`2[System.Text.RegularExpressions.Match,System.String]-AP, System.Func`2[System.Text.RegularExpressions.Match,System.String], System.Func`2[System.Text.RegularExpressions.Match,System.String]).  
 Free to test out and use.  
 
 Partners include:
@@ -13,13 +15,13 @@ Partners include:
 
 AI System Registry & Impact Tracker — publish your AI inventory, risks, and mitigations with machine-checkable templates; auto-generated public site & badges. 
 
-Open Procurement Starter — CSV→OCDS & BODS linkage, DCAT snippets, and one-command validation with official tools. 
+Open Procurement Starter — CSV→System.Func`2[System.Text.RegularExpressions.Match,System.String] & System.Func`2[System.Text.RegularExpressions.Match,System.String] linkage, System.Func`2[System.Text.RegularExpressions.Match,System.String] snippets, and one-command validation with official tools. 
 
 ## Why CoModules?
 
 1. It's free
 2. Standards-anchored (not bespoke websites).
-3. Evidence-first (IRM-style evidence tables in repo).
+3. Evidence-first (System.Func`2[System.Text.RegularExpressions.Match,System.String]-style evidence tables in repo).
 4. Open Government Partnership
 5. Portal-agnostic (CKAN, Socrata, OpenDataSoft, data.world).
  
@@ -37,3 +39,12 @@ modules/open-procurement-starter/README.md.
 - Fixed-fee pilots (support open source dev via InSeed).
 
 > See **GLOSSARY.md** for plain-English explanations of all acronyms.
+
+---
+
+## Start here
+- See **GLOSSARY.md** for plain-English acronyms (hover tooltips in pages).
+- Explore modules: **modules/ai-registry/** and **modules/open-procurement-starter/**.
+- Everything is designed for non-experts; copy an example, replace with your data, and you’re moving.
+
+

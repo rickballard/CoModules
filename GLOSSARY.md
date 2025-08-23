@@ -1,11 +1,11 @@
-# Glossary (plain English)
+# Glossary (abbrev → full name → what it is)
 
-- **<abbr title="Civic Best Practices Pipeline">CBPP</abbr>** — shared checklists, crosswalks, and evidence patterns used by all modules.
-- **<abbr title="US Office of Management and Budget memo on federal AI governance">OMB M-24-10</abbr>** — requires public AI use-case inventories in US agencies.
-- **<abbr title="Algorithmic Transparency Recording Standard (UK)">ATRS</abbr>** — UK record format describing public-sector algorithmic systems.
-- **<abbr title="Data Catalog Vocabulary">DCAT</abbr>** — standard metadata for data catalogs (used by portals).
-- **<abbr title="Open Contracting Data Standard">OCDS</abbr>** — standard for publishing procurement data (tenders, awards).
-- **<abbr title="Beneficial Ownership Data Standard">BODS</abbr>** — standard for publishing who really owns companies.
-- **<abbr title="Independent Reporting Mechanism (Open Government Partnership)">IRM</abbr>** — evidence review style we mimic in our Evidence Tables.
-
-> Tip: Hover over the acronyms for quick explanations. This repo avoids jargon creep.
+| Abbrev | Full name | What it is / where used |
+|---|---|---|
+| CBPP | Civic Best Practices Pipeline | Our shared checklists, crosswalks, and evidence patterns used by all modules. |
+| OMB M-24-10 | U.S. Office of Management and Budget Memorandum M-24-10 | Requires public federal AI use-case inventories; AI Registry aligns to it. |
+| ATRS | Algorithmic Transparency Recording Standard | UK record format for public-sector algorithmic systems; AI Registry can export to it. |
+| DCAT | Data Catalog Vocabulary | W3C standard for catalog/dataset metadata; used by portals. |
+| OCDS | Open Contracting Data Standard | Standard for publishing procurement data (tenders, awards, contracts). |
+| BODS | Beneficial Ownership Data Standard | Standard for publishing who really owns companies. |
+| IRM | Independent Reporting Mechanism | OGP’s evidence review approach; we mirror it in Evidence Tables. |
