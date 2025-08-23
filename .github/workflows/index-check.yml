@@ -1,23 +1,20 @@
 name: index-check
 on:
-  push:
-    branches: ["**"]
+  push: { branches: ["**"] }
   pull_request:
 jobs:
   index:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install PowerShell 7
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y powershell
       - name: Build docs index
-        run: pwsh -NoLogo -NoProfile -File ./tools/build-index.ps1
+        shell: pwsh
+        run: ./tools/build-index.ps1
       - name: Verify docs/index is up to date
+        shell: pwsh
         run: |
-          if git status --porcelain docs/index | grep .; then
-            echo "::error::docs/index is out of date. Run tools/build-index.ps1 and commit."
-            git --no-pager diff -- docs/index | tail -n +1 || true
+          if (git status --porcelain docs/index) {
+            Write-Host "::error::docs/index is out of date. Run tools/build-index.ps1 and commit."
+            git --no-pager diff -- docs/index
             exit 1
-          fi
+          }
