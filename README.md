@@ -37,3 +37,11 @@ modules/open-procurement-starter/README.md.
 - Fixed-fee pilots (support open source dev via InSeed).
 
 > See **GLOSSARY.md** for plain-English explanations of all acronyms.
+
+---
+
+## Start here
+- See **GLOSSARY.md** for plain-English acronyms (hover tooltips in pages).
+- Explore modules: **modules/ai-registry/** and **modules/open-procurement-starter/**.
+- Everything is designed for non-experts; copy an example, replace with your data, and you’re moving.
+
