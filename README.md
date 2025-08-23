@@ -35,3 +35,5 @@ modules/open-procurement-starter/README.md.
 - Public evidence pages
 - Remote workshops
 - Fixed-fee pilots (support open source dev via InSeed).
+
+> See **GLOSSARY.md** for plain-English explanations of all acronyms.
