@@ -1,0 +1,25 @@
+{
+  "generated": "2025-08-23T15:02:28",
+  "forward": {
+    "README.md": [
+      "docs/business-plan/00-README.md"
+    ],
+    "modules/ai-registry/README.md": [],
+    "GLOSSARY.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/business-plan/00-README.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "cbpp/README.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "docs/business-plan/01-Overview.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/02-Market-Compete.md": []
+  },
+  "backlinks": {
+    "docs/business-plan/00-README.md": [
+      "README.md"
+    ]
+  }
+}
