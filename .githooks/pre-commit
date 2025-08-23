@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+pwsh -NoLogo -NoProfile -File ./tools/build-index.ps1
+if ! git diff --quiet -- docs/index; then
+  echo "docs/index changed; adding refresh"
+  git add docs/index/*
+fi
