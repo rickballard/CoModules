@@ -1,34 +1,35 @@
 {
-  "generated": "2025-08-23T22:22:50-04:00 (94333b4)",
+  "generated": "2025-08-23T23:13:42-04:00 (1a26e3d)",
   "forward": {
-    "docs/business-plan/99-Appendix.md": [],
-    "shared/docs/WORKFLOWS.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "GLOSSARY.md": [],
     "shared/docs/LESSONS.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "docs/cli-guardrails.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    "shared/README.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    "docs/business-plan/03-Strategy.md": [],
-    "docs/business-plan/05-Marketing.md": [],
-    ".github/pull_request_template.md": [],
-    "cbpp/README.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "docs/business-plan/00-README.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "cbpp/README.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "docs/STYLE.md": [],
+    "docs/business-plan/01-Overview.md": [],
+    "shared/README.md": [],
+    "docs/cli-guardrails.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    "GLOSSARY.md": [],
+    "shared/docs/WORKFLOWS.md": [],
     "modules/ai-registry/README.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": []
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/00-README.md": [],
+    ".github/pull_request_template.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": []
   },
   "backlinks": {
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ],
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ]
   }

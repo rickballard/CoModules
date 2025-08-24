@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-08-23T22:22:50-04:00 (94333b4)
+Generated: 2025-08-23T23:13:42-04:00 (1a26e3d)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -14,6 +14,7 @@ Generated: 2025-08-23T22:22:50-04:00 (94333b4)
 * [docs/business-plan/05-Marketing.md](../business-plan/05-Marketing.md)
 * [docs/business-plan/99-Appendix.md](../business-plan/99-Appendix.md)
 * [docs/cli-guardrails.md](../cli-guardrails.md)
+* [docs/STYLE.md](../STYLE.md)
 * [GLOSSARY.md](../../GLOSSARY.md)
 * [modules/ai-registry/README.md](../../modules/ai-registry/README.md)
 * [modules/open-procurement-starter/README.md](../../modules/open-procurement-starter/README.md)
