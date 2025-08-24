@@ -1,0 +1,15 @@
+{
+  "id": "fraud-screener-BAD",
+  "name": "Benefit Fraud Screener (bad demo)",
+  "description": "Intentionally invalid record to demonstrate failing validation locally.",
+  "owner": "Dept. of Social Services",
+  "status": "production",
+  "purpose": "Demo only",
+  "impacted_rights": ["due_process","non-discrimination"],
+  "public_contact": "not-an-email",
+  "last_reviewed": "2025/99/99",
+  "risk_level": "extreme",
+  "deployment_context": "public-facing",
+  "oversight": { "appeals_url": "notaurl" },
+  "links": { "policy": "notaurl" }
+}
