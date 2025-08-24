@@ -1,0 +1,49 @@
+name: index-check
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+concurrency:
+  group: index-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  index:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      # Checkout PR head (exact commit)
+      - name: Checkout (PR)
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+
+      # Checkout push commit
+      - name: Checkout (push)
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+
+      # Prevent CRLF-only diffs on Windows
+      - name: Normalize line endings
+        run: |
+          git config core.autocrlf false
+          git config core.eol lf
+
+      - name: Build docs index
+        run: ./tools/build-index.ps1
+
+      - name: Verify docs/index is up to date
+        run: |
+          if (git status --porcelain docs/index) {
+            Write-Host "::error::docs/index is out of date. Run tools/build-index.ps1 and commit."
+            git --no-pager diff -- docs/index
+            exit 1
+          }
