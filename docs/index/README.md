@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-08-23T22:19:01-04:00 (6116916)
+Generated: 2025-08-24T17:35:38-04:00 (b194d12)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -14,10 +14,12 @@ Generated: 2025-08-23T22:19:01-04:00 (6116916)
 * [docs/business-plan/05-Marketing.md](../business-plan/05-Marketing.md)
 * [docs/business-plan/99-Appendix.md](../business-plan/99-Appendix.md)
 * [docs/cli-guardrails.md](../cli-guardrails.md)
+* [docs/STYLE.md](../STYLE.md)
 * [GLOSSARY.md](../../GLOSSARY.md)
 * [modules/ai-registry/README.md](../../modules/ai-registry/README.md)
 * [modules/open-procurement-starter/README.md](../../modules/open-procurement-starter/README.md)
-* [README.md](../../README.md)
+* [NEXT.md](../../NEXT.md)
+* [README.md](../../README.md) → ../../shared/docs/ISSUEOPS.md, ../../shared/tools/CoStack-SmokeTest.ps1
 * [shared/docs/LESSONS.md](../../shared/docs/LESSONS.md)
 * [shared/docs/WORKFLOWS.md](../../shared/docs/WORKFLOWS.md)
 * [shared/README.md](../../shared/README.md)
