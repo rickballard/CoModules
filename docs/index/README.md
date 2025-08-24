@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-08-23T17:26:49-04:00 (7c5bcea)
+Generated: 2025-08-23T17:29:40-04:00 (0ebe2b6)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [cbpp/README.md](../../cbpp/README.md)
@@ -11,6 +11,7 @@ Generated: 2025-08-23T17:26:49-04:00 (7c5bcea)
 * [docs/business-plan/04-Sales.md](../business-plan/04-Sales.md)
 * [docs/business-plan/05-Marketing.md](../business-plan/05-Marketing.md)
 * [docs/business-plan/99-Appendix.md](../business-plan/99-Appendix.md)
+* [docs/cli-guardrails.md](../cli-guardrails.md)
 * [GLOSSARY.md](../../GLOSSARY.md)
 * [modules/ai-registry/README.md](../../modules/ai-registry/README.md)
 * [modules/open-procurement-starter/README.md](../../modules/open-procurement-starter/README.md)

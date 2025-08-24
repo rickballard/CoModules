@@ -1,19 +1,20 @@
 {
-  "generated": "2025-08-23T17:26:49-04:00 (7c5bcea)",
+  "generated": "2025-08-23T17:29:40-04:00 (0ebe2b6)",
   "forward": {
-    "docs/business-plan/04-Sales.md": [],
-    "cbpp/README.md": [],
-    "README.md": [],
-    "GLOSSARY.md": [],
     "docs/business-plan/03-Strategy.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "docs/business-plan/00-README.md": [],
-    "docs/business-plan/05-Marketing.md": [],
     "modules/ai-registry/README.md": [],
-    "docs/business-plan/01-Overview.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "GLOSSARY.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "cbpp/README.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/00-README.md": [],
     ".github/pull_request_template.md": [],
-    "modules/open-procurement-starter/README.md": []
+    "docs/business-plan/99-Appendix.md": [],
+    "docs/business-plan/01-Overview.md": [],
+    "README.md": [],
+    "docs/cli-guardrails.md": []
   },
   "backlinks": {}
 }
