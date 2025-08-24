@@ -26,3 +26,15 @@ try {
 
 ## Link checks in docs
 - Resolve link targets and **ignore** anything that resolves outside the repository root.
+
+
+## One-liner bounce guard
+- High-end mice can double-paste a single line.
+- Prefer multi-line blocks; **or** add a no-op line before/after the one-liner:
+```powershell
+''|Out-Null
+# your one-liner here
+''|Out-Null
+```
+- Also end one-liners with `;`.
+
