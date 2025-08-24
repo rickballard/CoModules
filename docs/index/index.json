@@ -1,21 +1,21 @@
 {
-  "generated": "2025-08-23T21:50:30-04:00 (433dfd2)",
+  "generated": "2025-08-23T21:51:55-04:00 (5bb60c2)",
   "forward": {
+    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/00-README.md": [],
     "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "modules/open-procurement-starter/README.md": [],
     "docs/business-plan/01-Overview.md": [],
     "GLOSSARY.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "cbpp/README.md": [],
-    "docs/business-plan/05-Marketing.md": [],
+    "README.md": [],
     "docs/business-plan/03-Strategy.md": [],
-    "modules/ai-registry/README.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    ".github/pull_request_template.md": [],
-    "docs/business-plan/00-README.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
     "docs/cli-guardrails.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "README.md": []
+    "cbpp/README.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    ".github/pull_request_template.md": [],
+    "modules/ai-registry/README.md": []
   },
   "backlinks": {}
 }
