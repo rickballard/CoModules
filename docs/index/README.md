@@ -1,11 +1,12 @@
 # Repository Index
 
-Generated: 2025-08-25T21:38:10-04:00 (4acc1a8)
+Generated: 2025-08-25T21:38:36-04:00 (1498b43)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
 * [admin/status/CoModules-GRAND_MIGRATION.md](../../admin/status/CoModules-GRAND_MIGRATION.md)
 * [cbpp/README.md](../../cbpp/README.md)
+* [docs/_backlog/ADVANCED_INITIATIVES.md](../_backlog/ADVANCED_INITIATIVES.md)
 * [docs/business-plan/00-README.md](../business-plan/00-README.md)
 * [docs/business-plan/01-Overview.md](../business-plan/01-Overview.md)
 * [docs/business-plan/02-Market-Compete.md](../business-plan/02-Market-Compete.md)

@@ -1,39 +1,40 @@
 {
-  "generated": "2025-08-25T21:38:10-04:00 (4acc1a8)",
+  "generated": "2025-08-25T21:38:36-04:00 (1498b43)",
   "forward": {
+    "docs/cli-guardrails.md": [],
+    "cbpp/README.md": [],
+    "NEXT.md": [],
+    "GLOSSARY.md": [],
     "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
     "docs/business-plan/00-README.md": [],
-    "docs/STYLE.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "modules/FixTheWorld/README.md": [],
+    "modules/ai-registry/README.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "NEXT.md": [],
-    "shared/docs/WORKFLOWS.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    "modules/FixTheWorld/NEXT.md": [],
-    "GLOSSARY.md": [],
+    "shared/README.md": [],
     "docs/business-plan/99-Appendix.md": [],
-    "shared/docs/LESSONS.md": [],
-    ".github/pull_request_template.md": [],
     "modules/FixTheWorld/FTW_Game_IdeaCard_v2.md": [],
-    "docs/business-plan/04-Sales.md": [],
+    "shared/docs/LESSONS.md": [],
+    "modules/open-procurement-starter/README.md": [],
     "docs/business-plan/01-Overview.md": [],
-    "cbpp/README.md": [],
-    "docs/business-plan/05-Marketing.md": [],
-    "modules/ai-registry/README.md": [],
-    "modules/FixTheWorld/README.md": [],
-    "docs/business-plan/03-Strategy.md": [],
-    "docs/cli-guardrails.md": [],
-    "shared/README.md": []
+    "docs/_backlog/ADVANCED_INITIATIVES.md": [],
+    "shared/docs/WORKFLOWS.md": [],
+    "docs/STYLE.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "modules/FixTheWorld/NEXT.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/business-plan/05-Marketing.md": []
   },
   "backlinks": {
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ],
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ]
   }
