@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-08-24T18:08:24-04:00 (824f123)
+Generated: 2025-08-25T21:34:05-04:00 (1cf1503)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -18,6 +18,7 @@ Generated: 2025-08-24T18:08:24-04:00 (824f123)
 * [GLOSSARY.md](../../GLOSSARY.md)
 * [modules/ai-registry/README.md](../../modules/ai-registry/README.md)
 * [modules/FixTheWorld/FTW_Game_IdeaCard_v2.md](../../modules/FixTheWorld/FTW_Game_IdeaCard_v2.md)
+* [modules/FixTheWorld/README.md](../../modules/FixTheWorld/README.md)
 * [modules/open-procurement-starter/README.md](../../modules/open-procurement-starter/README.md)
 * [NEXT.md](../../NEXT.md)
 * [README.md](../../README.md) → ../../shared/docs/ISSUEOPS.md, ../../shared/tools/CoStack-SmokeTest.ps1
