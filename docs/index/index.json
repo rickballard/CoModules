@@ -1,42 +1,44 @@
 {
-  "generated": "2025-08-27T15:58:22-04:00 (6f97a04)",
+  "generated": "2025-08-27T16:08:00-04:00 (cee0560)",
   "forward": {
-    "docs/business-plan/05-Marketing.md": [],
-    "cbpp/README.md": [],
-    "shared/docs/WORKFLOWS.md": [],
-    "NEXT.md": [],
+    "docs/STYLE.md": [],
     "docs/business-plan/99-Appendix.md": [],
-    "docs/_backlog/ADVANCED_INITIATIVES.md": [],
-    "modules/FixTheWorld/FTW_Game_IdeaCard_v2.md": [],
-    "GLOSSARY.md": [],
-    "modules/ai-registry/README.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
+    "docs/business-plan/00-README.md": [],
+    "modules/CoFit/docs/HANDOFF.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "modules/CoFit/README.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
     "modules/FixTheWorld/README.md": [],
-    "modules/CoFit/FUNDER_BRIEF.md": [],
+    "modules/CoFit/docs/TODO.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/_backlog/ADVANCED_INITIATIVES.md": [],
+    "cbpp/README.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
     "docs/cli-guardrails.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "shared/docs/LESSONS.md": [],
-    "docs/business-plan/00-README.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    ".github/pull_request_template.md": [],
-    "docs/business-plan/03-Strategy.md": [],
     "shared/README.md": [],
+    "docs/business-plan/01-Overview.md": [],
     "docs/business-plan/04-Sales.md": [],
-    "modules/CoFit/README.md": [],
+    "shared/docs/LESSONS.md": [],
+    "GLOSSARY.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "NEXT.md": [],
+    "modules/CoFit/FUNDER_BRIEF.md": [],
+    "modules/ai-registry/README.md": [],
     "modules/FixTheWorld/NEXT.md": [],
-    "docs/STYLE.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": []
+    "docs/business-plan/05-Marketing.md": [],
+    "shared/docs/WORKFLOWS.md": [],
+    "modules/FixTheWorld/FTW_Game_IdeaCard_v2.md": []
   },
   "backlinks": {
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ],
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ]
   }
