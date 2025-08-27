@@ -1,3 +1,3 @@
-# Placeholder for modules/CoFit/FUNDER_BRIEF.md
+# CoFit FUNDER_BRIEF
 
-[Generated 2025-08-27T19:49:43.195833]
+[...see previous canvas for full content...]

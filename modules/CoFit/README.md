@@ -1,3 +1,3 @@
-# Placeholder for modules/CoFit/README.md
+# CoFit README
 
-[Generated 2025-08-27T19:49:43.195619]
+[...see previous canvas for full content...]
