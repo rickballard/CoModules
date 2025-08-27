@@ -1,44 +1,46 @@
 {
-  "generated": "2025-08-27T16:08:00-04:00 (cee0560)",
+  "generated": "2025-08-27T16:11:43-04:00 (3978fa2)",
   "forward": {
-    "docs/STYLE.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "docs/business-plan/00-README.md": [],
-    "modules/CoFit/docs/HANDOFF.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "modules/CoFit/README.md": [],
-    "docs/business-plan/03-Strategy.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "modules/FixTheWorld/README.md": [],
-    "modules/CoFit/docs/TODO.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    ".github/pull_request_template.md": [],
-    "docs/_backlog/ADVANCED_INITIATIVES.md": [],
+    "docs/cli-guardrails.md": [],
+    "modules/CoFit/FUNDER_BRIEF.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "shared/docs/LESSONS.md": [],
     "cbpp/README.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "docs/cli-guardrails.md": [],
-    "shared/README.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "shared/docs/LESSONS.md": [],
-    "GLOSSARY.md": [],
-    "modules/open-procurement-starter/README.md": [],
+    "docs/business-plan/99-Appendix.md": [],
     "NEXT.md": [],
-    "modules/CoFit/FUNDER_BRIEF.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "docs/STYLE.md": [],
     "modules/ai-registry/README.md": [],
+    "modules/CoFit/HANDOFF.md": [],
+    "shared/README.md": [],
+    "modules/CoFit/docs/HANDOFF.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "docs/business-plan/00-README.md": [],
+    "modules/CoFit/README.md": [],
+    "GLOSSARY.md": [],
+    "docs/_backlog/ADVANCED_INITIATIVES.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "modules/CoFit/TODO.md": [],
     "modules/FixTheWorld/NEXT.md": [],
-    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/01-Overview.md": [],
+    "modules/CoFit/docs/TODO.md": [],
     "shared/docs/WORKFLOWS.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "modules/FixTheWorld/README.md": [],
     "modules/FixTheWorld/FTW_Game_IdeaCard_v2.md": []
   },
   "backlinks": {
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ],
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ]
   }
