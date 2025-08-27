@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-08-25T21:38:36-04:00 (1498b43)
+Generated: 2025-08-26T09:21:27-04:00 (30976a4)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -18,6 +18,8 @@ Generated: 2025-08-25T21:38:36-04:00 (1498b43)
 * [docs/STYLE.md](../STYLE.md)
 * [GLOSSARY.md](../../GLOSSARY.md)
 * [modules/ai-registry/README.md](../../modules/ai-registry/README.md)
+* [modules/CoFit/FUNDER_BRIEF.md](../../modules/CoFit/FUNDER_BRIEF.md)
+* [modules/CoFit/README.md](../../modules/CoFit/README.md)
 * [modules/FixTheWorld/FTW_Game_IdeaCard_v2.md](../../modules/FixTheWorld/FTW_Game_IdeaCard_v2.md)
 * [modules/FixTheWorld/NEXT.md](../../modules/FixTheWorld/NEXT.md)
 * [modules/FixTheWorld/README.md](../../modules/FixTheWorld/README.md)

@@ -23,3 +23,4 @@ jobs:
         run: pip install -r modules/ai-registry/validators/requirements.txt
       - name: Validate examples
         run: python modules/ai-registry/validators/validate.py
+
