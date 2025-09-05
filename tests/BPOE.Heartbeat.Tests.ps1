@@ -10,15 +10,11 @@ Describe "BPOE: Long steps show heartbeat" {
     }
   }
   if (-not $scripts -or $scripts.Count -eq 0) {
-    It "has scripts to check" { $true | Should -BeTrue }
-    return
+    It "has scripts to check" { $true | Should -BeTrue }; return
   }
 
   $cases = foreach ($s in $scripts) {
-    [pscustomobject]@{
-      Path = if ($s -is [IO.FileInfo]) { $s.FullName } else { [string]$s }
-      Name = if ($s -is [IO.FileInfo]) { $s.Name     } else { [IO.Path]::GetFileName([string]$s) }
-    }
+    @{ Path = $s.FullName; Name = $s.Name }
   }
 
   It "wraps long ops with heartbeat: <Name>" -TestCases $cases {
@@ -26,10 +22,7 @@ Describe "BPOE: Long steps show heartbeat" {
     $text = Get-Content -Raw -LiteralPath $Path
     $hasLongCall = $text -match '(?m)^\s*(git|gh|Invoke-WebRequest|winget)\b'
     $hasHeartbeat = $text -match 'Invoke-WithHeartbeat'
-    if ($hasLongCall) {
-      $hasHeartbeat | Should -BeTrue -Because "$Path has long ops but no heartbeat"
-    } else {
-      $true | Should -BeTrue
-    }
+    if ($hasLongCall) { $hasHeartbeat | Should -BeTrue -Because "$Path has long ops but no heartbeat" }
+    else { $true | Should -BeTrue }
   }
 }
