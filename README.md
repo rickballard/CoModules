@@ -9,3 +9,6 @@
 
 > **Business-Development Business Plans (BDBP):** This repo maintains a public business plan under docs/business/public/ and a private BDBP under docs/business/private/.  See docs/methods/BDBP_METHOD.md for rationale and maintenance cadence.
 
+
+See BPOE docs in docs/methods/ (CoPing, heartbeat, wisdom log).
+
