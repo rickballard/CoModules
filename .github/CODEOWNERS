@@ -1,5 +1,4 @@
 # BPOE surfaces
-/docs/methods/                       @rickballard
-/tools/BPOE/                         @rickballard
-/.github/workflows/ps-tests.yml      @rickballard
-/tests/BPOE.Heartbeat.Tests.ps1      @rickballard
+docs/methods/*   @rickballard
+tools/BPOE/*     @rickballard
+tests/BPOE*      @rickballard
