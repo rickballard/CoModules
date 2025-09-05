@@ -1,4 +1,6 @@
-* text=auto
-*.ps1 text eol=lf
-*.psm1 text eol=lf
-*.md  text eol=lf
+# Normalize line endings by type
+*.ps1  text eol=crlf
+*.psm1 text eol=crlf
+*.psd1 text eol=crlf
+*.md   text eol=lf
+docs/** text eol=lf
