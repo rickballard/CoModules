@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-09-05T13:37:41-04:00 (e332b0f)
+Generated: 2025-09-05T13:47:38-04:00 (ad601b2)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -13,7 +13,10 @@ Generated: 2025-09-05T13:37:41-04:00 (e332b0f)
 * [docs/business-plan/04-Sales.md](../business-plan/04-Sales.md)
 * [docs/business-plan/05-Marketing.md](../business-plan/05-Marketing.md)
 * [docs/business-plan/99-Appendix.md](../business-plan/99-Appendix.md)
+* [docs/business/private/CoAgent_BDBP_Private.md](../business/private/CoAgent_BDBP_Private.md)
+* [docs/business/public/CoAgent_BP_Public.md](../business/public/CoAgent_BP_Public.md)
 * [docs/cli-guardrails.md](../cli-guardrails.md)
+* [docs/methods/BDBP_METHOD.md](../methods/BDBP_METHOD.md)
 * [docs/policies/grants/GRANT_USE_ALIGNMENT.md](../policies/grants/GRANT_USE_ALIGNMENT.md)
 * [GLOSSARY.md](../../GLOSSARY.md)
 * [modules/ai-registry/README.md](../../modules/ai-registry/README.md)

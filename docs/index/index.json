@@ -1,35 +1,38 @@
 {
-  "generated": "2025-09-05T13:37:41-04:00 (e332b0f)",
+  "generated": "2025-09-05T13:47:38-04:00 (ad601b2)",
   "forward": {
-    "docs/cli-guardrails.md": [],
-    "docs/business-plan/05-Marketing.md": [],
+    "shared/docs/WORKFLOWS.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    ".github/pull_request_template.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "docs/business-plan/01-Overview.md": [],
     "docs/business-plan/00-README.md": [],
-    "modules/ai-registry/README.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
+    "docs/business/private/CoAgent_BDBP_Private.md": [],
     "docs/business-plan/03-Strategy.md": [],
-    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
     "GLOSSARY.md": [],
     "cbpp/README.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    "shared/docs/WORKFLOWS.md": [],
-    "shared/README.md": [],
     "shared/docs/LESSONS.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "docs/business-plan/99-Appendix.md": []
+    "docs/methods/BDBP_METHOD.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/cli-guardrails.md": [],
+    "docs/business/public/CoAgent_BP_Public.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "modules/ai-registry/README.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "shared/README.md": []
   },
   "backlinks": {
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ],
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ]
   }
