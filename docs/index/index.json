@@ -1,35 +1,35 @@
 {
-  "generated": "2025-08-27T17:02:57-04:00 (29dd802)",
+  "generated": "2025-09-05T13:37:41-04:00 (e332b0f)",
   "forward": {
-    "docs/business-plan/02-Market-Compete.md": [],
-    "modules/open-procurement-starter/README.md": [],
+    "docs/cli-guardrails.md": [],
+    "docs/business-plan/05-Marketing.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "modules/ai-registry/README.md": [],
-    "GLOSSARY.md": [],
-    "docs/cli-guardrails.md": [],
-    "docs/business-plan/05-Marketing.md": [],
-    "docs/business-plan/03-Strategy.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "cbpp/README.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "shared/docs/LESSONS.md": [],
     ".github/pull_request_template.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
-    "shared/README.md": [],
-    "shared/docs/WORKFLOWS.md": [],
+    "docs/business-plan/00-README.md": [],
+    "modules/ai-registry/README.md": [],
     "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "GLOSSARY.md": [],
+    "cbpp/README.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "shared/docs/WORKFLOWS.md": [],
+    "shared/README.md": [],
+    "shared/docs/LESSONS.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "docs/business-plan/01-Overview.md": [],
     "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "docs/business-plan/00-README.md": []
+    "docs/business-plan/99-Appendix.md": []
   },
   "backlinks": {
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ],
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ]
   }
