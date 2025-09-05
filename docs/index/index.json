@@ -1,40 +1,40 @@
 {
-  "generated": "2025-09-05T14:14:48-04:00 (13c2373)",
+  "generated": "2025-09-05T15:04:49-04:00 (6ed7dd2)",
   "forward": {
-    "docs/business-plan/01-Overview.md": [],
-    "docs/business/private/CoAgent_BDBP_Private.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "shared/docs/LESSONS.md": [],
-    "docs/methods/BDBP_METHOD.md": [],
-    ".github/pull_request_template.md": [],
-    "docs/business-plan/05-Marketing.md": [],
     "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
-    "shared/docs/WORKFLOWS.md": [],
-    "docs/business-plan/00-README.md": [],
+    "docs/business-plan/01-Overview.md": [],
     "docs/business-plan/03-Strategy.md": [],
-    "GLOSSARY.md": [],
-    "docs/cli-guardrails.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "docs/business/public/CoAgent_BP_Public.md": [],
-    "docs/SESSION_SUMMARY_20250905.md": [],
-    "cbpp/README.md": [],
-    "modules/ai-registry/README.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "docs/methods/BPOE_CoPing.md": [],
-    "shared/README.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "modules/open-procurement-starter/README.md": []
+    "GLOSSARY.md": [],
+    "docs/business/private/CoAgent_BDBP_Private.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "docs/cli-guardrails.md": [],
+    "modules/ai-registry/README.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "shared/README.md": [],
+    "docs/business/public/CoAgent_BP_Public.md": [],
+    "docs/methods/BDBP_METHOD.md": [],
+    "docs/business-plan/00-README.md": [],
+    "cbpp/README.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "shared/docs/WORKFLOWS.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "shared/docs/LESSONS.md": [],
+    "docs/SESSION_SUMMARY_20250905.md": [],
+    "docs/methods/BPOE_CoPing.md": []
   },
   "backlinks": {
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ],
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ]
   }

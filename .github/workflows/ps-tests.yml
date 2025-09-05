@@ -1,9 +1,6 @@
+# ps-tests.yml
 name: PS Tests
-
-on:
-  push:
-  pull_request:
-
+on: [push, pull_request]
 jobs:
   pester:
     runs-on: windows-latest
