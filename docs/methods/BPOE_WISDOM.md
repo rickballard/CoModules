@@ -9,3 +9,5 @@
 
 - 2025-09-05: Heartbeat test hardened; CoPong rule codified; tests re-run + CI nudged.
 
+
+- 2025-09-05: Preflight installed (tools/Test-BPOE.ps1, quiet checks); exit hook normalized to PowerShell.Exiting; prompt-driven heartbeat stabilized; CoTint v2 (tools/BPOE/CoTint.psm1) + color policy doc; ISSUEOPS explainer ensured non-empty.
