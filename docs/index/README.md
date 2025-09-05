@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-09-05T15:48:14-04:00 (7d229e7)
+Generated: 2025-09-05T15:57:20-04:00 (8a20ae9)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -19,6 +19,7 @@ Generated: 2025-09-05T15:48:14-04:00 (7d229e7)
 * [docs/methods/BDBP_METHOD.md](../methods/BDBP_METHOD.md)
 * [docs/methods/BPOE_CoPing.md](../methods/BPOE_CoPing.md)
 * [docs/methods/BPOE_CoPong.md](../methods/BPOE_CoPong.md)
+* [docs/methods/BPOE_DO_Authoring.md](../methods/BPOE_DO_Authoring.md)
 * [docs/methods/BPOE_LOG.md](../methods/BPOE_LOG.md)
 * [docs/methods/BPOE_SESSION_CARD.md](../methods/BPOE_SESSION_CARD.md) → ../methods/BPOE_WISDOM.md
 * [docs/methods/BPOE_WISDOM.md](../methods/BPOE_WISDOM.md)
