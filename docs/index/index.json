@@ -1,38 +1,39 @@
 {
-  "generated": "2025-09-05T14:05:25-04:00 (5f7728a)",
+  "generated": "2025-09-05T14:05:40-04:00 (2fa8dfb)",
   "forward": {
-    "docs/business-plan/03-Strategy.md": [],
-    "shared/docs/WORKFLOWS.md": [],
-    "shared/docs/LESSONS.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "docs/business-plan/01-Overview.md": [],
     "cbpp/README.md": [],
-    ".github/pull_request_template.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "shared/docs/WORKFLOWS.md": [],
+    "docs/business/private/CoAgent_BDBP_Private.md": [],
+    "docs/business-plan/00-README.md": [],
+    "GLOSSARY.md": [],
+    "docs/SESSION_SUMMARY_20250905.md": [],
+    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
+    "shared/docs/LESSONS.md": [],
+    "docs/methods/BDBP_METHOD.md": [],
+    "modules/open-procurement-starter/README.md": [],
+    "docs/business/public/CoAgent_BP_Public.md": [],
+    "docs/cli-guardrails.md": [],
+    "shared/README.md": [],
+    "docs/business-plan/05-Marketing.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "docs/cli-guardrails.md": [],
-    "docs/business/private/CoAgent_BDBP_Private.md": [],
-    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
-    "docs/business/public/CoAgent_BP_Public.md": [],
-    "modules/ai-registry/README.md": [],
-    "docs/business-plan/05-Marketing.md": [],
-    "docs/methods/BDBP_METHOD.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "docs/business-plan/00-README.md": [],
     "docs/business-plan/99-Appendix.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "shared/README.md": [],
-    "GLOSSARY.md": []
+    ".github/pull_request_template.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "modules/ai-registry/README.md": []
   },
   "backlinks": {
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ],
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ]
   }
