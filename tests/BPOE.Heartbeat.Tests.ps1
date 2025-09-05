@@ -1,5 +1,5 @@
 Set-StrictMode -Version Latest
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference='Stop'
 
 Describe "BPOE: Long steps show heartbeat" {
   $roots = @('tools','dev','scripts')
@@ -9,16 +9,15 @@ Describe "BPOE: Long steps show heartbeat" {
       $scripts += Get-ChildItem -Path $root -Recurse -File -Filter *.ps1 -ErrorAction SilentlyContinue
     }
   }
-
   if (-not $scripts -or $scripts.Count -eq 0) {
     It "has scripts to check" { $true | Should -BeTrue }
     return
   }
 
   $cases = foreach ($s in $scripts) {
-    @{
-      Path = ($s -is [IO.FileInfo]) ? $s.FullName : [string]$s
-      Name = ($s -is [IO.FileInfo]) ? $s.Name     : [IO.Path]::GetFileName([string]$s)
+    [pscustomobject]@{
+      Path = if ($s -is [IO.FileInfo]) { $s.FullName } else { [string]$s }
+      Name = if ($s -is [IO.FileInfo]) { $s.Name     } else { [IO.Path]::GetFileName([string]$s) }
     }
   }
 

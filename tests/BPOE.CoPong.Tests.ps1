@@ -8,14 +8,20 @@ Describe "BPOE: CoPong present when DO scripts are referenced" {
     return
   }
 
-  foreach ($m in $mds) {
+  $cases = foreach ($m in $mds) {
     $t = Get-Content -Raw -LiteralPath $m.FullName
-    $mentionsDoScript = $t -match '(?i)\./docs/do/.+\.ps1'
-    if ($mentionsDoScript) {
-      $hasPong = $t -match '(?ms)^\s*pwsh\s+-NoProfile\s+-ExecutionPolicy\s+Bypass\s+-File\s+\./docs/do/.+\.ps1'
-      It "has CoPong one-liner: $($m.Name)" { $hasPong | Should -BeTrue }
+    $mentions = [bool]($t -match '(?im)\./docs/do/.+\.ps1')
+    # Accept inline code or code blocks; not anchored to start-of-line
+    $pong = [bool]($t -match '(?ims)pwsh\s+-NoProfile\s+-ExecutionPolicy\s+Bypass\s+-File\s+\./docs/do/.+\.ps1')
+    [pscustomobject]@{ Name=$m.Name; Mentions=$mentions; HasPong=$pong }
+  }
+
+  It "docs require CoPong when DO referenced: <Name>" -TestCases $cases {
+    param($Name, $Mentions, $HasPong)
+    if ($Mentions) {
+      $HasPong | Should -BeTrue -Because "$Name references ./docs/do/*.ps1 but no CoPong one-liner found"
     } else {
-      It "no DO scripts referenced: $($m.Name)" { $true | Should -BeTrue }
+      $true | Should -BeTrue
     }
   }
 }
