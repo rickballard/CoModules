@@ -55,3 +55,8 @@ If any response >25 lines, **stop** and provide downloadable files + CoPing oneâ
 Use when safe to auto-execute:
 pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-123.ps1
 
+
+## CoPong (full-send) pattern
+Use when safe to auto-execute:
+pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-123.ps1
+
