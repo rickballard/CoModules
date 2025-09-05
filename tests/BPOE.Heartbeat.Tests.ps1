@@ -1,16 +1,36 @@
-# BPOE.Heartbeat.Tests.ps1
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
 Describe "BPOE: Long steps show heartbeat" {
   $roots = @('tools','dev','scripts')
   $scripts = @()
-  foreach ($root in $roots) { if (Test-Path $root) { $scripts += Get-ChildItem -Recurse -File -Path $root -Include *.ps1 -ErrorAction SilentlyContinue } }
-  if ($scripts.Count -eq 0) { It "has scripts to check" { $true | Should -BeTrue } }
-  It "wraps long ops with heartbeat: <_.Name>" -ForEach $scripts {
-    param($s)
-    $text = Get-Content -Raw -LiteralPath $s.FullName
+  foreach ($root in $roots) {
+    if (Test-Path $root) {
+      $scripts += Get-ChildItem -Path $root -Recurse -File -Filter *.ps1 -ErrorAction SilentlyContinue
+    }
+  }
+
+  if (-not $scripts -or $scripts.Count -eq 0) {
+    It "has scripts to check" { $true | Should -BeTrue }
+    return
+  }
+
+  $cases = foreach ($s in $scripts) {
+    @{
+      Path = ($s -is [IO.FileInfo]) ? $s.FullName : [string]$s
+      Name = ($s -is [IO.FileInfo]) ? $s.Name     : [IO.Path]::GetFileName([string]$s)
+    }
+  }
+
+  It "wraps long ops with heartbeat: <Name>" -TestCases $cases {
+    param($Path, $Name)
+    $text = Get-Content -Raw -LiteralPath $Path
     $hasLongCall = $text -match '(?m)^\s*(git|gh|Invoke-WebRequest|winget)\b'
     $hasHeartbeat = $text -match 'Invoke-WithHeartbeat'
-    if ($hasLongCall) { $hasHeartbeat | Should -BeTrue -Because "$($s.FullName) has long ops but no heartbeat" } else { $true | Should -BeTrue }
+    if ($hasLongCall) {
+      $hasHeartbeat | Should -BeTrue -Because "$Path has long ops but no heartbeat"
+    } else {
+      $true | Should -BeTrue
+    }
   }
 }
