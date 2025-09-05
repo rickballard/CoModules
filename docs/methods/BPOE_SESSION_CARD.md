@@ -43,3 +43,10 @@ If any response >25 lines, **stop** and provide downloadable files + CoPing oneâ
 - Ensure CI files/tests updated if workflows changed.
 - Write/refresh `docs/SESSION_SUMMARY_YYYYMMDD.md` and include branch + PR link.
 - Keep `main` unprotected until migration completes.
+
+## Handy links
+- **Current session summary (this branch):** [https://github.com/rickballard/CoModules/blob/docs/bdbp-coagent-250905-1400/docs/SESSION_SUMMARY_20250905.md](https://github.com/rickballard/CoModules/blob/docs/bdbp-coagent-250905-1400/docs/SESSION_SUMMARY_20250905.md)
+- **Wisdom log (cumulative):** [./BPOE_WISDOM.md](./BPOE_WISDOM.md)
+- **Working branch root:** [docs/bdbp-coagent-250905-1400](https://github.com/rickballard/CoModules/blob/docs/bdbp-coagent-250905-1400/)
+- **PR #16:** https://github.com/rickballard/CoModules/pull/16
+
