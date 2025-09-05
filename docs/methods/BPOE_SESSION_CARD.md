@@ -69,3 +69,8 @@ Otherwise use **CoPing** (paste-for-review).
 For **every safe DO Block**, include the CoPong one-liner that runs `./docs/do/*.ps1`.
 This is mandatory; a linter test will fail otherwise.
 
+
+- CoAgent 24h policy: ./CoAgent_AutoUninstall.md
+
+- CoAgent silent ops: ./CoAgent_SilentOps.md
+
