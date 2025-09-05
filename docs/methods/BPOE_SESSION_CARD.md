@@ -60,3 +60,7 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-123.ps1
 Use when safe to auto-execute:
 pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-123.ps1
 
+## CoPong rule (enforced)
+If a DO Block is **safe to auto-execute**, append this line under it:
+`pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-XYZ.ps1`
+Otherwise use **CoPing** (paste-for-review).
