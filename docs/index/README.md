@@ -1,6 +1,6 @@
 # Repository Index
 
-Generated: 2025-09-05T15:15:07-04:00 (ace10df)
+Generated: 2025-09-05T15:19:10-04:00 (6d7d130)
 
 * [.github/pull_request_template.md](../../.github/pull_request_template.md)
 * [admin/status/CoCivium-GRAND_MIGRATION.md](../../admin/status/CoCivium-GRAND_MIGRATION.md)
@@ -18,6 +18,7 @@ Generated: 2025-09-05T15:15:07-04:00 (ace10df)
 * [docs/cli-guardrails.md](../cli-guardrails.md)
 * [docs/methods/BDBP_METHOD.md](../methods/BDBP_METHOD.md)
 * [docs/methods/BPOE_CoPing.md](../methods/BPOE_CoPing.md)
+* [docs/methods/BPOE_CoPong.md](../methods/BPOE_CoPong.md)
 * [docs/methods/BPOE_SESSION_CARD.md](../methods/BPOE_SESSION_CARD.md) → ../methods/BPOE_WISDOM.md
 * [docs/methods/BPOE_WISDOM.md](../methods/BPOE_WISDOM.md)
 * [docs/policies/grants/GRANT_USE_ALIGNMENT.md](../policies/grants/GRANT_USE_ALIGNMENT.md)
