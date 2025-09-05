@@ -1,38 +1,38 @@
 {
-  "generated": "2025-09-05T14:00:33-04:00 (0fb2ca9)",
+  "generated": "2025-09-05T14:01:59-04:00 (233dd00)",
   "forward": {
-    "shared/docs/LESSONS.md": [],
-    "GLOSSARY.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "modules/ai-registry/README.md": [],
-    "docs/cli-guardrails.md": [],
+    "cbpp/README.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "docs/business-plan/00-README.md": [],
     "shared/docs/WORKFLOWS.md": [],
-    ".github/pull_request_template.md": [],
+    "docs/cli-guardrails.md": [],
+    "docs/business-plan/03-Strategy.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "shared/docs/LESSONS.md": [],
+    "docs/methods/BDBP_METHOD.md": [],
+    "docs/business-plan/02-Market-Compete.md": [],
+    "modules/ai-registry/README.md": [],
+    "docs/business/private/CoAgent_BDBP_Private.md": [],
+    "GLOSSARY.md": [],
+    "modules/open-procurement-starter/README.md": [],
     "docs/business-plan/01-Overview.md": [],
-    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
+    "docs/business/public/CoAgent_BP_Public.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/business-plan/99-Appendix.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
     "shared/README.md": [],
-    "docs/business-plan/02-Market-Compete.md": [],
-    "docs/business-plan/03-Strategy.md": [],
-    "modules/open-procurement-starter/README.md": [],
-    "docs/business/public/CoAgent_BP_Public.md": [],
-    "docs/business/private/CoAgent_BDBP_Private.md": [],
-    "docs/business-plan/00-README.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "cbpp/README.md": [],
-    "docs/methods/BDBP_METHOD.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "docs/business-plan/05-Marketing.md": []
+    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
+    "docs/business-plan/04-Sales.md": []
   },
   "backlinks": {
-    "shared/tools/CoStack-SmokeTest.ps1": [
+    "shared/docs/ISSUEOPS.md": [
       "README.md"
     ],
-    "shared/docs/ISSUEOPS.md": [
+    "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
     ]
   }
