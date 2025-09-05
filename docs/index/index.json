@@ -1,47 +1,47 @@
 {
-  "generated": "2025-09-05T15:28:53-04:00 (aa6792d)",
+  "generated": "2025-09-05T15:30:41-04:00 (55ead7b)",
   "forward": {
     "modules/open-procurement-starter/README.md": [],
     "shared/docs/WORKFLOWS.md": [],
-    "docs/methods/BPOE_CoPing.md": [],
-    "docs/business-plan/01-Overview.md": [],
-    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
-    "docs/SESSION_SUMMARY_20250905.md": [],
-    "admin/status/CoModules-GRAND_MIGRATION.md": [],
-    "docs/methods/BPOE_WISDOM.md": [],
-    "docs/business-plan/99-Appendix.md": [],
-    "docs/methods/BPOE_CoPong.md": [],
-    ".github/pull_request_template.md": [],
-    "docs/cli-guardrails.md": [],
+    "docs/business/private/CoAgent_BDBP_Private.md": [],
     "cbpp/README.md": [],
-    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
-    "docs/business-plan/00-README.md": [],
+    "docs/business-plan/05-Marketing.md": [],
+    "modules/ai-registry/README.md": [],
+    "docs/policies/grants/GRANT_USE_ALIGNMENT.md": [],
     "docs/business-plan/02-Market-Compete.md": [],
+    "admin/status/CoModules-GRAND_MIGRATION.md": [],
+    "docs/SESSION_SUMMARY_20250905.md": [],
+    "shared/README.md": [],
+    "shared/docs/LESSONS.md": [],
+    "docs/business-plan/04-Sales.md": [],
+    "docs/business-plan/99-Appendix.md": [],
+    "GLOSSARY.md": [],
+    "docs/business-plan/01-Overview.md": [],
+    "docs/methods/BPOE_CoPong.md": [],
     "README.md": [
       "shared/docs/ISSUEOPS.md",
       "shared/tools/CoStack-SmokeTest.ps1"
     ],
-    "docs/business/private/CoAgent_BDBP_Private.md": [],
-    "modules/ai-registry/README.md": [],
-    "docs/methods/BPOE_LOG.md": [],
     "docs/business/public/CoAgent_BP_Public.md": [],
-    "shared/docs/LESSONS.md": [],
-    "docs/methods/BDBP_METHOD.md": [],
-    "docs/business-plan/05-Marketing.md": [],
-    "GLOSSARY.md": [],
-    "shared/README.md": [],
-    "docs/business-plan/04-Sales.md": [],
-    "docs/business-plan/03-Strategy.md": [],
+    "docs/methods/BPOE_LOG.md": [],
+    "docs/methods/BPOE_CoPing.md": [],
+    "docs/methods/BPOE_WISDOM.md": [],
+    "docs/business-plan/00-README.md": [],
     "docs/methods/BPOE_SESSION_CARD.md": [
       "docs/methods/BPOE_WISDOM.md"
-    ]
+    ],
+    "docs/methods/BDBP_METHOD.md": [],
+    ".github/pull_request_template.md": [],
+    "docs/cli-guardrails.md": [],
+    "admin/status/CoCivium-GRAND_MIGRATION.md": [],
+    "docs/business-plan/03-Strategy.md": []
   },
   "backlinks": {
-    "shared/docs/ISSUEOPS.md": [
-      "README.md"
-    ],
     "docs/methods/BPOE_WISDOM.md": [
       "docs/methods/BPOE_SESSION_CARD.md"
+    ],
+    "shared/docs/ISSUEOPS.md": [
+      "README.md"
     ],
     "shared/tools/CoStack-SmokeTest.ps1": [
       "README.md"
