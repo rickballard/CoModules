@@ -64,3 +64,8 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-123.ps1
 If a DO Block is **safe to auto-execute**, append this line under it:
 `pwsh -NoProfile -ExecutionPolicy Bypass -File ./docs/do/DO-XYZ.ps1`
 Otherwise use **CoPing** (paste-for-review).
+
+## Auto-render rule (CoPong)
+For **every safe DO Block**, include the CoPong one-liner that runs `./docs/do/*.ps1`.
+This is mandatory; a linter test will fail otherwise.
+
