@@ -74,3 +74,6 @@ This is mandatory; a linter test will fail otherwise.
 
 - CoAgent silent ops: ./CoAgent_SilentOps.md
 
+
+- Pulse (end-of-set): ./BPOE_Pulse.md
+

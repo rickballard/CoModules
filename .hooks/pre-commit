@@ -1,0 +1,8 @@
+#!/bin/sh
+pwsh -NoProfile -File "tools/Test-WorkableRepo.ps1" -Quiet
+RC=$?
+if [ "$RC" -ne 0 ]; then
+  echo "pre-commit: repo doctor failed (rc=$RC)" 1>&2
+  exit 1
+fi
+exit 0
