@@ -1,11 +1,14 @@
                  text=auto
 
-# Docs/config: force LF
+# Docs/config/code default to LF (except PowerShell)
 .md             text eol=lf
 .yml            text eol=lf
 .yaml           text eol=lf
 .json           text eol=lf
+.py             text eol=lf
+.js             text eol=lf
+.ts             text eol=lf
 
-# PowerShell: keep CRLF (Windows consoles) — UTF-8, no BOM
+# PowerShell stays CRLF
 .ps1            text eol=crlf working-tree-encoding=UTF-8
 .psm1           text eol=crlf working-tree-encoding=UTF-8
