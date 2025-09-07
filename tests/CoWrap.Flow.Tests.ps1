@@ -16,12 +16,14 @@ Describe "CoWrap → CoUnWrap flow (safe, non-CI)" -Tag 'cowrap-e2e' {
 
   It "produces a CoWrap zip" {
     & "$HOME\Downloads\CoCacheLocal\bin\Wrap.ps1" -ToSession 'ANY' -Agent 'T' | Out-Null
-    (Get-ChildItem $_dl -Filter 'CoWrap-*.zip').Count | Should -BeGreaterThan 0
+    $count = (Get-ChildItem $_dl -Filter 'CoWrap-*.zip' -ErrorAction SilentlyContinue | Measure-Object).Count
+    $count | Should -BeGreaterThan 0
   }
 
   It "consumes it and marks the source as DELETABLE" {
     & "$HOME\Downloads\CoCacheLocal\bin\Unwrap.ps1" -Agent 'T' | Out-Null
-    (Get-ChildItem $_dl -Filter 'CoWrap_DELETABLE-*.zip').Count | Should -Be 1
+    $count = (Get-ChildItem $_dl -Filter 'CoWrap_DELETABLE-*.zip' -ErrorAction SilentlyContinue | Measure-Object).Count
+    $count | Should -Be 1
   }
 
   AfterAll {

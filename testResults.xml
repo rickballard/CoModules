@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="51" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2025-09-05" time="20:18:54">
+  <environment platform="Microsoft Windows 11 Pro|C:\WINDOWS|\Device\Harddisk0\Partition3" user="Chris" machine-name="X1" cwd="C:\Users\Chris\Documents\GitHub\CoModules" os-version="10.0.26120" user-domain="X1" clr-version="9.0.6" nunit-version="2.5.8.0" />
+  <culture-info current-culture="en-CA" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="5.6594" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.CoPong.Tests.ps1" executed="True" result="Success" success="True" time="1.2332" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.CoPong.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="BPOE: CoPong present when DO scripts are referenced" executed="True" result="Success" success="True" time="0.3683" asserts="0" description="BPOE: CoPong present when DO scripts are referenced">
+            <results>
+              <test-suite type="ParameterizedTest" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: &lt;Name&gt;" executed="True" result="Success" success="True" time="0.2824" asserts="0" description="docs require CoPong when DO referenced: &lt;Name&gt;">
+                <results>
+                  <test-case description="docs require CoPong when DO referenced: cli-guardrails.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: cli-guardrails.md" time="0.1689" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: SESSION_SUMMARY_20250905.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: SESSION_SUMMARY_20250905.md" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: CoAgent_BDBP_Private.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: CoAgent_BDBP_Private.md" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: CoAgent_BP_Public.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: CoAgent_BP_Public.md" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 00-README.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 00-README.md" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 01-Overview.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 01-Overview.md" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 02-Market-Compete.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 02-Market-Compete.md" time="0.0031" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 03-Strategy.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 03-Strategy.md" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 04-Sales.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 04-Sales.md" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 05-Marketing.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 05-Marketing.md" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: 99-Appendix.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: 99-Appendix.md" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: README.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: README.md" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BDBP_METHOD.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BDBP_METHOD.md" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_CoPing.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_CoPing.md" time="0.013" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_CoPong.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_CoPong.md" time="0.0031" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_DO_Authoring.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_DO_Authoring.md" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_ISSUEOPS_Explainer.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_ISSUEOPS_Explainer.md" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_LOG.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_LOG.md" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_Preflight.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_Preflight.md" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_Pulse.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_Pulse.md" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_SESSION_CARD.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_SESSION_CARD.md" time="0.005" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_ThreePanel_Handoff.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_ThreePanel_Handoff.md" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: BPOE_WISDOM.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: BPOE_WISDOM.md" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: CoAgent_Advisory_ThreePanel.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: CoAgent_Advisory_ThreePanel.md" time="0.0038" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: CoAgent_AutoUninstall.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: CoAgent_AutoUninstall.md" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: CoAgent_Product_Advisories.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: CoAgent_Product_Advisories.md" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: CoAgent_SilentOps.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: CoAgent_SilentOps.md" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="docs require CoPong when DO referenced: GRANT_USE_ALIGNMENT.md" name="BPOE: CoPong present when DO scripts are referenced.docs require CoPong when DO referenced: GRANT_USE_ALIGNMENT.md" time="0.0074" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Heartbeat.Tests.ps1" executed="True" result="Success" success="True" time="0.347" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Heartbeat.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="BPOE: Long steps show heartbeat" executed="True" result="Success" success="True" time="0.1939" asserts="0" description="BPOE: Long steps show heartbeat">
+            <results>
+              <test-suite type="ParameterizedTest" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: &lt;Name&gt;" executed="True" result="Success" success="True" time="0.178" asserts="0" description="wraps long ops with heartbeat: &lt;Name&gt;">
+                <results>
+                  <test-case description="wraps long ops with heartbeat: build-index.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: build-index.ps1" time="0.0076" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Start-CoWrapWatcher.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Start-CoWrapWatcher.ps1" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Status-CoWrapWatcher.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Status-CoWrapWatcher.ps1" time="0.0203" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Stop-CoWrapWatcher.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Stop-CoWrapWatcher.ps1" time="0.031" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Sweep.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Sweep.ps1" time="0.0096" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Test-BPOE.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Test-BPOE.ps1" time="0.0122" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Test-WorkableRepo.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Test-WorkableRepo.ps1" time="0.0116" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Wrap.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Wrap.ps1" time="0.0091" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Wraps.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Wraps.ps1" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: CoAgent_BDBP_Setup.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: CoAgent_BDBP_Setup.ps1" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: CoPingLauncher.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: CoPingLauncher.ps1" time="0.0048" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: Write-CoAgentInstallStamp.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: Write-CoAgentInstallStamp.ps1" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: enter.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: enter.ps1" time="0.0072" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: pr-admin-merge.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: pr-admin-merge.ps1" time="0.0383" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: pr-solo-merge.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: pr-solo-merge.ps1" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="wraps long ops with heartbeat: repoint.ps1" name="BPOE: Long steps show heartbeat.wraps long ops with heartbeat: repoint.ps1" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Preflight.Tests.ps1" executed="True" result="Success" success="True" time="0.3938" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Preflight.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="BPOE Preflight" executed="True" result="Success" success="True" time="0.2717" asserts="0" description="BPOE Preflight">
+            <results>
+              <test-case description="runs without throwing" name="BPOE Preflight.runs without throwing" time="0.2392" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="does not start OEStatusTimer" name="BPOE Preflight.does not start OEStatusTimer" time="0.0196" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.ProfileEdit.Tests.ps1" executed="True" result="Success" success="True" time="0.1833" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.ProfileEdit.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Profile AST" executed="True" result="Success" success="True" time="0.0737" asserts="0" description="Profile AST">
+            <results>
+              <test-case description="profile parses clean if present" name="Profile AST.profile parses clean if present" time="0.0606" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Pulse.Tests.ps1" executed="True" result="Failure" success="False" time="0.2765" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Pulse.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="BPOE Pulse" executed="True" result="Failure" success="False" time="0.1504" asserts="0" description="BPOE Pulse">
+            <results>
+              <test-case description="writes a breadcrumb and prints a line" name="BPOE Pulse.writes a breadcrumb and prints a line" time="0.1371" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>Expected no exception to be thrown, but an exception "Error formatting a string: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.." was thrown from C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Pulse.Tests.ps1:5 char:7
+    +     { Write-BpoePulse -Message "TEST: unit" -OutDir $tmp } | Should - …
+    +       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.</message>
+                  <stack-trace>at { Write-BpoePulse -Message "TEST: unit" -OutDir $tmp } | Should -Not -Throw, C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Pulse.Tests.ps1:5
+at &lt;ScriptBlock&gt;, C:\Users\Chris\Documents\GitHub\CoModules\tests\BPOE.Pulse.Tests.ps1:5</stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\CoAgent.Expiry.Tests.ps1" executed="True" result="Failure" success="False" time="0.208" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\CoAgent.Expiry.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="CoAgent.Expiry" executed="True" result="Failure" success="False" time="0.0924" asserts="0" description="CoAgent.Expiry">
+            <results>
+              <test-case description="flags installs older than MaxHours as expired and fresh as not expired" name="CoAgent.Expiry.flags installs older than MaxHours as expired and fresh as not expired" time="0.0799" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>Expected $true, but got $false.</message>
+                  <stack-trace>at (Test-CoAgentExpired -MaxHours 24) | Should -BeTrue, C:\Users\Chris\Documents\GitHub\CoModules\tests\CoAgent.Expiry.Tests.ps1:11
+at &lt;ScriptBlock&gt;, C:\Users\Chris\Documents\GitHub\CoModules\tests\CoAgent.Expiry.Tests.ps1:11</stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\Chris\Documents\GitHub\CoModules\tests\CoWrap.Flow.Tests.ps1" executed="True" result="Success" success="True" time="3.0176" asserts="0" description="C:\Users\Chris\Documents\GitHub\CoModules\tests\CoWrap.Flow.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="CoWrap → CoUnWrap flow (safe, non-CI)" executed="True" result="Success" success="True" time="2.908" asserts="0" description="CoWrap → CoUnWrap flow (safe, non-CI)">
+            <results>
+              <test-case description="produces a CoWrap zip" name="CoWrap → CoUnWrap flow (safe, non-CI).produces a CoWrap zip" time="2.3454" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="consumes it and marks the source as DELETABLE" name="CoWrap → CoUnWrap flow (safe, non-CI).consumes it and marks the source as DELETABLE" time="0.4114" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

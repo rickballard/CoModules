@@ -1,0 +1,152 @@
+[
+  {
+    "task": "Breadcrumbs",
+    "detail": "Shows CoWrap.latest.json and CoPing.latest.json from CoTemp so concurrent sessions can see one another.",
+    "hint": "Show CoWrap & CoPing pointers",
+    "word": "crumbs",
+    "label": "CoCrumbs"
+  },
+  {
+    "task": "WrapStatus",
+    "detail": "Queries CoWrap watcher health and last wrap, if any.",
+    "hint": "Show wrap watcher status",
+    "word": "wrap status",
+    "label": "CoWrapStatus"
+  },
+  {
+    "task": "CleanCoTemp",
+    "args": [
+      "-MaxAgeDays",
+      "30"
+    ],
+    "word": "clean cotemp",
+    "detail": "Dry-run list only; nothing deleted.",
+    "label": "CoCleanCoTemp",
+    "hint": "List old files (>30d)"
+  },
+  {
+    "task": "CleanCoTemp",
+    "args": [
+      "-MaxAgeDays",
+      "30",
+      "-Purge"
+    ],
+    "word": "purge cotemp",
+    "detail": "Deletes old items from CoTemp. Gated to Live mode.",
+    "label": "CoPurgeCoTemp",
+    "hint": "Delete old files (>30d)"
+  },
+  {
+    "task": "PasteGuard",
+    "args": [
+      "-Mode",
+      "on"
+    ],
+    "word": "paste guard on",
+    "detail": "Turns on PSReadLine ConfirmOnPaste; reminds you to disable right-click-paste in Terminal settings.",
+    "label": "CoPasteGuardOn",
+    "hint": "Confirm on paste"
+  },
+  {
+    "task": "PasteGuard",
+    "args": [
+      "-Mode",
+      "off"
+    ],
+    "word": "paste guard off",
+    "detail": "Turns off ConfirmOnPaste (not recommended during DO runs).",
+    "label": "CoPasteGuardOff",
+    "hint": "No confirm on paste"
+  },
+  {
+    "task": "FixPrompt",
+    "detail": "Clears stray PS>/>> and cd back to CoModules root; re-enables ConfirmOnPaste.",
+    "hint": "Snap back to repo",
+    "word": "fix prompt",
+    "label": "CoFixPrompt"
+  },
+  {
+    "task": "RemindersStart",
+    "detail": "Starts the CoRemind daemon that checks conditions and only notifies when action is needed.",
+    "hint": "Start exception-only reminders",
+    "word": "start reminders",
+    "label": "CoRemindersStart"
+  },
+  {
+    "task": "RemindersStatus",
+    "detail": "Shows whether reminders are running and last check result.",
+    "hint": "Reminder daemon status",
+    "word": "reminders status",
+    "label": "CoRemindersStatus"
+  },
+  {
+    "task": "RemindersStop",
+    "detail": "Stops the reminder daemon.",
+    "hint": "Stop reminders",
+    "word": "stop reminders",
+    "label": "CoRemindersStop"
+  },
+  {
+    "task": "WatcherStart",
+    "detail": "Launches the CoWrap watcher process.",
+    "hint": "Start CoWrap watcher",
+    "word": "start watcher",
+    "label": "CoWatcherStart"
+  },
+  {
+    "task": "WatcherStatus",
+    "detail": "Shows watcher health + PID.",
+    "hint": "CoWrap watcher status",
+    "word": "watcher status",
+    "label": "CoWatcherStatus"
+  },
+  {
+    "task": "WatcherStop",
+    "detail": "Stops the watcher.",
+    "hint": "Stop CoWrap watcher",
+    "word": "stop watcher",
+    "label": "CoWatcherStop"
+  },
+  {
+    "task": "Help",
+    "detail": "Prints the current CoWords (canonical + Co… synonyms).",
+    "hint": "List CoWords",
+    "word": "help",
+    "label": "CoHelp"
+  },
+  {
+    "task": "CoWordMap",
+    "detail": "Dumps docs/methods/CoWords.map.json for debugging.",
+    "hint": "Show CoWords map",
+    "word": "coword map",
+    "label": "CoMap"
+  },
+  {
+    "task": "SaveIdea",
+    "detail": "Creates docs/ideas/.md with timestamp.",
+    "hint": "Quick idea note",
+    "word": "save idea",
+    "label": "CoSaveIdea"
+  },
+  {
+    "task": "DraftIssue",
+    "detail": "Opens a minimal docs/ISSUE.md template.",
+    "hint": "Create ISSUE.md",
+    "word": "draft issue",
+    "label": "CoDraftIssue"
+  },
+  {
+    "task": "OpenCoOps",
+    "detail": "Opens CoOpActions, CoOpSettings, CoOpWisdom tabs (pointer doc).",
+    "hint": "Open CoOp cheat sheets",
+    "word": "open issueops",
+    "label": "CoOpenIssueOps"
+  },
+  {
+    "task": "PingTest",
+    "detail": "Sends a dummy CoPing to prove the bus/breadcrumbs.",
+    "hint": "Write a test CoPing",
+    "word": "ping test",
+    "label": "CoPingTest"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "cotemp-sweep": {
+    "enabled": true,
+    "type": "cotemp",
+    "maxAgeDays": 30,
+    "minTotalMBForNotify": 200,
+    "intervalDaysMin": 25,
+    "intervalDaysMax": 35
+  }
+}

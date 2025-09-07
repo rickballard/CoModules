@@ -1,0 +1,24 @@
+<h1>CoOpActions — CoCivium Cheat Sheet</h1>
+<p>Click a Co-button to copy the CoWord; paste in chat or say it. By default the system is in <b>Demo</b> mode (explain / dry-run). Switch to <b>Live</b> mode when ready.</p>
+<p><b>Mode:</b> use <code>live mode</code> or <code>demo mode</code>.</p>
+<table><tr><th style="text-align:left;">Button</th><th style="text-align:left;">What it does</th></tr>
+<tr><td><code>CoCrumbs</code></td><td>Show CoWrap &amp; CoPing pointers <details><summary>…</summary><p>Shows CoWrap.latest.json and CoPing.latest.json from CoTemp so concurrent sessions can see one another.</p><p><i>Also accepts:</i> <code>crumbs</code></p></details></td></tr>
+<tr><td><code>CoWrapStatus</code></td><td>Show wrap watcher status <details><summary>…</summary><p>Queries CoWrap watcher health and last wrap, if any.</p><p><i>Also accepts:</i> <code>wrap status</code></p></details></td></tr>
+<tr><td><code>CoCleanCoTemp</code></td><td>List old files (&gt;30d) <details><summary>…</summary><p>Dry-run list only; nothing deleted.</p><p><i>Also accepts:</i> <code>clean cotemp</code></p></details></td></tr>
+<tr><td><code>CoPurgeCoTemp</code></td><td>Delete old files (&gt;30d) <details><summary>…</summary><p>Deletes old items from CoTemp. Gated to Live mode.</p><p><i>Also accepts:</i> <code>purge cotemp</code></p></details></td></tr>
+<tr><td><code>CoPasteGuardOn</code></td><td>Confirm on paste <details><summary>…</summary><p>Turns on PSReadLine ConfirmOnPaste; reminds you to disable right-click-paste in Terminal settings.</p><p><i>Also accepts:</i> <code>paste guard on</code></p></details></td></tr>
+<tr><td><code>CoPasteGuardOff</code></td><td>No confirm on paste <details><summary>…</summary><p>Turns off ConfirmOnPaste (not recommended during DO runs).</p><p><i>Also accepts:</i> <code>paste guard off</code></p></details></td></tr>
+<tr><td><code>CoFixPrompt</code></td><td>Snap back to repo <details><summary>…</summary><p>Clears stray PS&gt;/&gt;&gt; and cd back to CoModules root; re-enables ConfirmOnPaste.</p><p><i>Also accepts:</i> <code>fix prompt</code></p></details></td></tr>
+<tr><td><code>CoRemindersStart</code></td><td>Start exception-only reminders <details><summary>…</summary><p>Starts the CoRemind daemon that checks conditions and only notifies when action is needed.</p><p><i>Also accepts:</i> <code>start reminders</code></p></details></td></tr>
+<tr><td><code>CoRemindersStatus</code></td><td>Reminder daemon status <details><summary>…</summary><p>Shows whether reminders are running and last check result.</p><p><i>Also accepts:</i> <code>reminders status</code></p></details></td></tr>
+<tr><td><code>CoRemindersStop</code></td><td>Stop reminders <details><summary>…</summary><p>Stops the reminder daemon.</p><p><i>Also accepts:</i> <code>stop reminders</code></p></details></td></tr>
+<tr><td><code>CoWatcherStart</code></td><td>Start CoWrap watcher <details><summary>…</summary><p>Launches the CoWrap watcher process.</p><p><i>Also accepts:</i> <code>start watcher</code></p></details></td></tr>
+<tr><td><code>CoWatcherStatus</code></td><td>CoWrap watcher status <details><summary>…</summary><p>Shows watcher health + PID.</p><p><i>Also accepts:</i> <code>watcher status</code></p></details></td></tr>
+<tr><td><code>CoWatcherStop</code></td><td>Stop CoWrap watcher <details><summary>…</summary><p>Stops the watcher.</p><p><i>Also accepts:</i> <code>stop watcher</code></p></details></td></tr>
+<tr><td><code>CoHelp</code></td><td>List CoWords <details><summary>…</summary><p>Prints the current CoWords (canonical + Co… synonyms).</p><p><i>Also accepts:</i> <code>help</code></p></details></td></tr>
+<tr><td><code>CoMap</code></td><td>Show CoWords map <details><summary>…</summary><p>Dumps docs/methods/CoWords.map.json for debugging.</p><p><i>Also accepts:</i> <code>coword map</code></p></details></td></tr>
+<tr><td><code>CoSaveIdea</code></td><td>Quick idea note <details><summary>…</summary><p>Creates docs/ideas/.md with timestamp.</p><p><i>Also accepts:</i> <code>save idea</code></p></details></td></tr>
+<tr><td><code>CoDraftIssue</code></td><td>Create ISSUE.md <details><summary>…</summary><p>Opens a minimal docs/ISSUE.md template.</p><p><i>Also accepts:</i> <code>draft issue</code></p></details></td></tr>
+<tr><td><code>CoOpenIssueOps</code></td><td>Open CoOp cheat sheets <details><summary>…</summary><p>Opens CoOpActions, CoOpSettings, CoOpWisdom tabs (pointer doc).</p><p><i>Also accepts:</i> <code>open issueops</code></p></details></td></tr>
+<tr><td><code>CoPingTest</code></td><td>Write a test CoPing <details><summary>…</summary><p>Sends a dummy CoPing to prove the bus/breadcrumbs.</p><p><i>Also accepts:</i> <code>ping test</code></p></details></td></tr>
+</table>

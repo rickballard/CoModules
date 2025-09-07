@@ -1,0 +1,11 @@
+[
+  {"name":"OpenAI Codex","category":"coding-agent","status":"adopt","data_surface":"https-facade","notes":"Only call our façade."},
+  {"name":"OpenAI Sora","category":"video-gen","status":"recommend","data_surface":"prompts-assets","notes":"Short clips; keep prompts in repo."},
+  {"name":"GPTs + Actions","category":"front-door","status":"recommend","data_surface":"https-facade","notes":"Tight allowlist & scopes."},
+  {"name":"Langfuse","category":"observability","status":"adopt","notes":"Trace/cost logs; no secrets."},
+  {"name":"Qdrant","category":"vector-db","status":"recommend","notes":"OSS; easy export."},
+  {"name":"Presidio","category":"safety","status":"adopt","notes":"Pre-redaction before any 3rd-party calls."},
+  {"name":"gitleaks","category":"secops","status":"adopt"},
+  {"name":"Syft","category":"sbom","status":"adopt"},
+  {"name":"OPA","category":"policy","status":"adopt"}
+]

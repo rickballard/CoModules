@@ -1,0 +1,14 @@
+# Presidio rules (starter) — adjust per domain
+pii:
+  - EMAIL_ADDRESS
+  - PHONE_NUMBER
+  - CREDIT_CARD
+  - IP_ADDRESS
+  - CRYPTO
+secrets:
+  - AWS_ACCESS_KEY
+  - GCP_API_KEY
+  - GENERIC_API_KEY
+redaction:
+  policy: redact-with-tags
+  tag_format: "[REDACTED:{type}]"

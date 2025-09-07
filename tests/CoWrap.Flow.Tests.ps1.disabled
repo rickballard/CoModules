@@ -1,0 +1,22 @@
+#requires -Version 7
+Import-Module Pester -ErrorAction SilentlyContinue | Out-Null
+
+Describe "CoWrap → CoUnWrap flow" {
+  BeforeAll {
+    $env:COCACHE_DOWNLOADS = Join-Path $TestDrive 'dl'
+    $env:COCACHE_LOCAL     = Join-Path $TestDrive 'local'
+    New-Item -Type Directory -Force -Path $env:COCACHE_DOWNLOADS,$env:COCACHE_LOCAL | Out-Null
+    $env:COSESSION_ID = "TEST-" + [guid]::NewGuid()
+  }
+  It "produces a CoWrap zip" {
+    & "$HOME\Downloads\CoCacheLocal\bin\Wrap.ps1" -ToSession 'ANY' -Agent 'T' | Out-Null
+    (Get-ChildItem $env:COCACHE_DOWNLOADS -Filter 'CoWrap-*.zip').Count | Should -BeGreaterThan 0
+  }
+  It "consumes it and marks the source as DELETABLE" {
+    & "$HOME\Downloads\CoCacheLocal\bin\Unwrap.ps1" -Agent 'T' | Out-Null
+    (Get-ChildItem $env:COCACHE_DOWNLOADS -Filter 'CoWrap_DELETABLE-*.zip').Count | Should -Be 1
+  }
+  AfterAll {
+    Remove-Item Env:\COCACHE_DOWNLOADS, Env:\COCACHE_LOCAL -ErrorAction SilentlyContinue
+  }
+}

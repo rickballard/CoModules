@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info: { title: CoAgent Facade, version: 0.1.0 }
+servers: [{ url: https://coagent.local }]
+paths:
+  /issue.create:
+    post:
+      summary: Create an issue with labels
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [repo, title]
+              properties:
+                repo:   { type: string }
+                title:  { type: string }
+                body:   { type: string }
+                labels: { type: array, items: { type: string } }
+      responses:
+        "202": { description: accepted }
+  /status.report:
+    get:
+      summary: Read-only status of pipelines, branches, checks
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - in: query
+          name: repo
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: ok }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }

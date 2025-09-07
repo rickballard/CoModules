@@ -1,9 +1,10 @@
-Set-StrictMode -Version Latest; $ErrorActionPreference = "Stop"
-if ($global:CoWrapWatcher) {
-  "Running. Downloads: {0}  Started(UTC): {1}  Subs: {2}" -f `
-    $global:CoWrapWatcher.Downloads, $global:CoWrapWatcher.StartedUtc, $global:CoWrapWatcher.Subs.Count | Write-Host
+Set-StrictMode -Version Latest; $ErrorActionPreference="Stop"
+$RUN = Join-Path $HOME "Downloads\CoCacheLocal\run"
+$pidFile = Join-Path $RUN "cowrap-watcher.pid"
+if (-not (Test-Path $pidFile)) { Write-Host "CoWrap watcher: not running (no pid file)"; exit 0 }
+$watcherPid = Get-Content $pidFile -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($watcherPid -and (Get-Process -Id $watcherPid -ErrorAction SilentlyContinue)) {
+  Write-Host ("CoWrap watcher: RUNNING (pid {0})" -f $watcherPid)
 } else {
-  "Not running." | Write-Host
+  Write-Host "CoWrap watcher: NOT running (stale pid file)"
 }
-Get-EventSubscriber | Where-Object { $_.SourceIdentifier -like 'cowrap-*' } |
-  Select-Object SourceIdentifier, EventName, SubscriptionId | Format-Table -AutoSize

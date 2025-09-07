@@ -324,3 +324,53 @@ System.Object[]
   - Prompt invoke: OK
   - No OE timers: OK
   - Workbench launcher/inner: OK
+
+## BPOE Preflight — 2025-09-05 18:46:51 -04:00
+- Result: FAIL
+- Issues:
+  - Exit hook missing (PowerShell.Exiting not registered)
+- Checks:
+  - Profile AST: OK
+  - Prompt invoke: OK
+  - No OE timers: OK
+  - Workbench launcher/inner: OK
+
+## BPOE Preflight — 2025-09-05 18:48:45 -04:00
+- Result: FAIL
+- Issues:
+  - Exit hook missing (PowerShell.Exiting not registered)
+- Checks:
+  - Profile AST: OK
+  - Prompt invoke: OK
+  - No OE timers: OK
+  - Workbench launcher/inner: OK
+
+## BPOE Preflight — 2025-09-05 19:54:29 -04:00
+- Result: FAIL
+- Issues:
+  - Exit hook missing (PowerShell.Exiting not registered)
+- Checks:
+  - Profile AST: OK
+  - Prompt invoke: OK
+  - No OE timers: OK
+  - Workbench launcher/inner: OK
+
+## BPOE Preflight — 2025-09-05 20:17:18 -04:00
+- Result: FAIL
+- Issues:
+  - Exit hook missing (PowerShell.Exiting not registered)
+- Checks:
+  - Profile AST: OK
+  - Prompt invoke: OK
+  - No OE timers: OK
+  - Workbench launcher/inner: OK
+
+## BPOE Preflight — 2025-09-05 20:18:56 -04:00
+- Result: FAIL
+- Issues:
+  - Exit hook missing (PowerShell.Exiting not registered)
+- Checks:
+  - Profile AST: OK
+  - Prompt invoke: OK
+  - No OE timers: OK
+  - Workbench launcher/inner: OK

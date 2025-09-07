@@ -1,0 +1,182 @@
+{
+  "clean cotemp": {
+    "task": "CleanCoTemp",
+    "args": [
+      "-MaxAgeDays",
+      "30"
+    ]
+  },
+  "cocleancotemp": {
+    "task": "CleanCoTemp",
+    "args": [
+      "-MaxAgeDays",
+      "30"
+    ]
+  },
+  "cocrumbs": {
+    "task": "Breadcrumbs"
+  },
+  "codraftissue": {
+    "task": "DraftIssue"
+  },
+  "cofixprompt": {
+    "task": "FixPrompt"
+  },
+  "cohelp": {
+    "task": "Help"
+  },
+  "comap": {
+    "task": "CoWordMap"
+  },
+  "coopencopad": {
+    "task": "OpenCoPad"
+  },
+  "coopenissueops": {
+    "task": "OpenIssueOps"
+  },
+  "copasteguardoff": {
+    "task": "PasteGuard",
+    "args": [
+      "-Mode",
+      "off"
+    ]
+  },
+  "copasteguardon": {
+    "task": "PasteGuard",
+    "args": [
+      "-Mode",
+      "on"
+    ]
+  },
+  "copingtest": {
+    "task": "PingTest"
+  },
+  "copurgecotemp": {
+    "task": "CleanCoTemp",
+    "args": [
+      "-MaxAgeDays",
+      "30",
+      "-Purge"
+    ]
+  },
+  "coremindersstart": {
+    "task": "RemindersStart"
+  },
+  "coremindersstatus": {
+    "task": "RemindersStatus"
+  },
+  "coremindersstop": {
+    "task": "RemindersStop"
+  },
+  "cosaveidea": {
+    "task": "SaveIdea"
+  },
+  "cowatcherstart": {
+    "task": "WatcherStart"
+  },
+  "cowatcherstatus": {
+    "task": "WatcherStatus"
+  },
+  "cowatcherstop": {
+    "task": "WatcherStop"
+  },
+  "coword map": {
+    "task": "CoWordMap"
+  },
+  "cowrapstatus": {
+    "task": "WrapStatus"
+  },
+  "crumbs": {
+    "task": "Breadcrumbs"
+  },
+  "crumbs stats": {
+    "task": "BreadStats"
+  },
+  "demo mode": {
+    "task": "SetSessionMode",
+    "args": [
+      "-Mode",
+      "demo"
+    ]
+  },
+  "draft issue": {
+    "task": "DraftIssue"
+  },
+  "fix prompt": {
+    "task": "FixPrompt"
+  },
+  "help": {
+    "task": "Help"
+  },
+  "live mode": {
+    "task": "SetSessionMode",
+    "args": [
+      "-Mode",
+      "live"
+    ]
+  },
+  "open copad": {
+    "task": "OpenCoPad"
+  },
+  "open issueops": {
+    "task": "OpenIssueOps"
+  },
+  "paste guard off": {
+    "task": "PasteGuard",
+    "args": [
+      "-Mode",
+      "off"
+    ]
+  },
+  "paste guard on": {
+    "task": "PasteGuard",
+    "args": [
+      "-Mode",
+      "on"
+    ]
+  },
+  "ping test": {
+    "task": "PingTest"
+  },
+  "purge cotemp": {
+    "task": "CleanCoTemp",
+    "args": [
+      "-MaxAgeDays",
+      "30",
+      "-Purge"
+    ]
+  },
+  "reminders status": {
+    "task": "RemindersStatus"
+  },
+  "save idea": {
+    "task": "SaveIdea"
+  },
+  "start reminders": {
+    "task": "RemindersStart"
+  },
+  "start watcher": {
+    "task": "WatcherStart"
+  },
+  "stop reminders": {
+    "task": "RemindersStop"
+  },
+  "stop watcher": {
+    "task": "WatcherStop"
+  },
+  "watcher status": {
+    "task": "WatcherStatus"
+  },
+  "wrap status": {
+    "task": "WrapStatus"
+  },
+  "verify stack": {
+    "task": "VerifyStack"
+  },
+  "coverify": {
+    "task": "VerifyStack"
+  },
+  "open migration": {
+    "task": "OpenMigration"
+  }
+}

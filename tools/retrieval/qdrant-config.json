@@ -1,0 +1,7 @@
+{
+  "url": "http://localhost:6333",
+  "collection": "comodules-docs",
+  "embedding_model": "text-embedding-3-small",
+  "dim": 1536,
+  "notes": "Dev defaults; do not store sensitive content unredacted."
+}
