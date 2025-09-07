@@ -8,3 +8,7 @@ Thumbs.db
 node_modules/
 dist/
 __pycache__/
+# Local logs and dev data
+tools/logs/
+tools/retrieval/qdrant_data/
+__pycache__/
