@@ -1,11 +1,12 @@
 root = true
 
-[*]
+[]
 charset = utf-8
-end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{yml,yaml,json,md}]
-indent_style = space
-indent_size = 2
+[.{md,yml,yaml,json}]
+end_of_line = lf
+
+[.{ps1,psm1}]
+end_of_line = crlf
