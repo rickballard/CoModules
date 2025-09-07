@@ -10,9 +10,7 @@ def log_digest(event: str, payload: dict):
         red = {}
         for k, v in payload.items():
             red[k] = redact(str(v)) if isinstance(v, (str, int, float)) else v
-        dig = hashlib.sha256(
-            json.dumps(red, sort_keys=True).encode("utf-8")
-        ).hexdigest()
+        dig = hashlib.sha256(json.dumps(red, sort_keys=True).encode("utf-8")).hexdigest()
         entry = {
             "ts": int(time.time()1000),
             "event": event,
