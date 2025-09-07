@@ -16,3 +16,4 @@ def log_digest(event: str, payload: dict):
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     except Exception:
         pass
+
