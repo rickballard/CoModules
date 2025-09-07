@@ -7,12 +7,20 @@ LOGFILE = os.path.join(LOGDIR, "telemetry.ndjson")
 
 def log_digest(event: str, payload: dict):
     try:
-        redacted = {}
+        red = {}
         for k, v in payload.items():
-            redacted[k] = redact(str(v)) if isinstance(v, (str, int, float)) else v
-        digest = hashlib.sha256(json.dumps(redacted, sort_keys=T        entry = {"ts": int(time.time()1000), "event": event, "digest": digest, "fields": redacted}
+            red[k] = redact(str(v)) if isinstance(v, (str, int, float)) else v
+        dig = hashlib.sha256(
+            json.dumps(red, sort_keys=True).encode("utf-8")
+        ).hexdigest()
+        entry = {
+            "ts": int(time.time()1000),
+            "event": event,
+            "digest": dig,
+            "fields": red,
+        }
         with open(LOGFILE, "a", encoding="utf-8") as f:
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     except Exception:
-        # Telemetry must never crash the facade
+        # telemetry must never crash the façade
         pass
