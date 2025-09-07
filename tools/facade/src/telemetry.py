@@ -10,10 +10,9 @@ def log_digest(event: str, payload: dict):
         redacted = {}
         for k, v in payload.items():
             redacted[k] = redact(str(v)) if isinstance(v, (str, int, float)) else v
-        digest = hashlib.sha256(json.dumps(redacted, sort_keys=True).encode("utf-8")).hexdigest()
-        entry = {"ts": int(time.time()1000), "event": event, "digest": digest, "fields": redacted}
+        digest = hashlib.sha256(json.dumps(redacted, sort_keys=T        entry = {"ts": int(time.time()1000), "event": event, "digest": digest, "fields": redacted}
         with open(LOGFILE, "a", encoding="utf-8") as f:
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     except Exception:
-        # telemetry must never crash the facade
+        # Telemetry must never crash the facade
         pass
