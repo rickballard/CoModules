@@ -17,3 +17,4 @@ def log_digest(event: str, payload: dict):
     except Exception:
         # Never let telemetry kill the façade
         pass
+
