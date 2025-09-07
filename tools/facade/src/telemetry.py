@@ -25,3 +25,4 @@ def log_digest(event: str, payload: dict):
         # telemetry must never crash the façade
         pass
 
+
