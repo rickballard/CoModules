@@ -6,7 +6,6 @@ Set-StrictMode -Version Latest; $ErrorActionPreference='Stop'
 $Inbox = [IO.Path]::GetFullPath((Resolve-Path $Inbox))
 $Processed = [IO.Path]::GetFullPath((Resolve-Path $Processed))
 New-Item -ItemType Directory -Force -Path $Inbox,$Processed | Out-Null
-
 Get-ChildItem $Inbox -File -Filter .zip | ForEach-Object {
   $zip = $_.FullName
   $stamp = Get-Date -Format "yyyyMMdd-HHmmss"
@@ -19,4 +18,3 @@ Get-ChildItem $Inbox -File -Filter .zip | ForEach-Object {
   Move-Item -Force $zip (Join-Path $Processed (Split-Path $zip -Leaf))
   Write-Host "Unpacked: $zip -> $out"
 }
-

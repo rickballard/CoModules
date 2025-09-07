@@ -30,6 +30,9 @@ try {
   $json = $crumb | ConvertTo-Json -Depth 6
   $file = Join-Path $dl ("CoAction_{0}_{1}.json" -f $stamp,$Name)
   $json | Set-Content -Path $file
+ $json | Set-Content -Path (Join-Path $dl 'CoAction.latest.json')$safe = ($Name -replace '[^\w\.-]','_')
+ $json | Set-Content -Path (Join-Path $dl 'CoAction.latest.json')$file = Join-Path $dl ("CoAction_{0}_{1}.json" -f $stamp,$safe)
+ $json | Set-Content -Path (Join-Path $dl 'CoAction.latest.json')$json | Set-Content -Path $file
   $json | Set-Content -Path (Join-Path $dl 'CoAction.latest.json')
 } catch {}
   $dl = Get-DL
