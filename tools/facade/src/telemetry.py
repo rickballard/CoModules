@@ -15,6 +15,5 @@ def log_digest(event: str, payload: dict):
         with open(LOGFILE, "a", encoding="utf-8") as f:
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     except Exception:
+        # swallow logging errors; façade must never crash due to telemetry
         pass
-
-
