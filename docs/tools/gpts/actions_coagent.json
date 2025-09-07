@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "CoAgent (Read-only)",
+  "name_for_model": "coagent_readonly",
+  "description_for_human": "Read-only status via the CoAgent façade.",
+  "description_for_model": "Call only read-only endpoints. Never send secrets. Use short requests.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://coagent.local/openapi.json",
+    "is_user_authenticated": false
+  },
+  "capabilities": { "background_mode": false, "response_format": { "type": "json" } }
+}
