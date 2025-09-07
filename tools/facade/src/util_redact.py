@@ -8,3 +8,4 @@ def redact(s: str) -> str:
     s = AWS_KEY.sub("[REDACTED:AWS_KEY]", s)
     s = GENERIC_KEY.sub(r"\1: [REDACTED:KEY]", s)
     return s
+
