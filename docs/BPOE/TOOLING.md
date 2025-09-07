@@ -5,3 +5,5 @@ Start here for tool adoption and de-risking.
 - Guardrails: `docs/tools/policies/TOOL_GUARDRAILS.md`  
 - Façade API: `docs/tools/openapi.coagent-facade.yml`  
 - Sora prompt pack: `docs/outreach/sora_prompts/`
+
+- Observability: docs/tools/observability/README.md

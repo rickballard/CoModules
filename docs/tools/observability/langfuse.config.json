@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "baseUrl": "http://localhost:3030",
+  "publicKey": "LF_PUBLIC_KEY_HERE",
+  "secretKey": "LF_SECRET_KEY_HERE",
+  "notes": "Disabled by default; wire only in dev/test."
+}
