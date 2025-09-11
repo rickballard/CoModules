@@ -1,3 +1,4 @@
+﻿# policy: read-only (planning; enforced by DO-GUARD)
 # FTWTG/scripts/GuardianWatcher.ps1
 Set-StrictMode -Version Latest; $ErrorActionPreference='Stop'
 param([string]$PolicyPath = "$PSScriptRoot/../policy/guardian-policy.json")
@@ -119,3 +120,4 @@ while ($true) {
     }
   }
 }
+

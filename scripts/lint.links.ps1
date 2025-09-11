@@ -1,3 +1,4 @@
+Set-StrictMode -Version Latest; $ErrorActionPreference='Stop'
 # scripts/lint.links.ps1  (warn-only)
 $md = git ls-files *.md
 $bad = @()
@@ -15,3 +16,4 @@ if($bad.Count){
   $bad | Format-Table -AutoSize
   exit 0
 }
+

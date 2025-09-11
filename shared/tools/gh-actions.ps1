@@ -1,3 +1,4 @@
+Set-StrictMode -Version Latest; $ErrorActionPreference='Stop'
 param(
   [ValidateSet("list","log","count","rerun")][string]$Action="list",
   [string]$WorkflowFile="auto-add-to-project.yml",
@@ -19,3 +20,4 @@ switch($Action){
     break
   }
 }
+

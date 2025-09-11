@@ -1,0 +1,7 @@
+#!/bin/sh
+pwsh -NoProfile -ExecutionPolicy Bypass -File "C:/Users/Chris/Documents/GitHub/CoModules/DO-GUARD.ps1"
+RES=$?
+if [ $RES -ne 0 ]; then
+  echo "Pre-commit blocked by DO-GUARD."
+  exit $RES
+fi

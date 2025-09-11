@@ -1,3 +1,4 @@
+# policy: read-only (planning; enforced by DO-GUARD)
 param()
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
@@ -62,8 +63,9 @@ foreach($k in ($forward.Keys | Sort-Object)){
   $md += "* [$k]($(RelFromIndex $k))"
   $outs = @(@($forward[$k]) | Where-Object { $_ })
   if ($outs.Count -gt 0) {
-    $md += " → " + (( $outs | ForEach-Object { RelFromIndex $_ } ) -join ", ")
+    $md += " â†’ " + (( $outs | ForEach-Object { RelFromIndex $_ } ) -join ", ")
   }
   $md += "`n"
 }
 Set-Content -Encoding UTF8 (Join-Path $idxDir 'README.md') -Value $md
+

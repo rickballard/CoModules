@@ -1,3 +1,4 @@
+﻿# policy: read-only (planning; enforced by DO-GUARD)
 param(
   [int]$alreadyGrantedToday = 0  # pass what FTW has already granted today
 )
@@ -33,3 +34,4 @@ if($grant -gt 0){
   Remove-Item $earned -Force -ErrorAction SilentlyContinue
   Write-Output (@{granted=0; reason='cap_reached'} | ConvertTo-Json)
 }
+
