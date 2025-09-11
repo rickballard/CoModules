@@ -1,3 +1,4 @@
+<!-- status: stub; target: 150+ words -->
 # BPOE: Cross-linking pass (CoCivium canonicals)
 
 **Goal:** Every entry point points to CoCivium canonicals pinned to a release tag.
@@ -6,4 +7,5 @@
 - Append “Canonical References” to README where relevant.
 - Prefer tag-pinned links for provenance; bump tag only during explicit migration.
 - Rebase rule: keep canonicals from `main` (`git checkout --ours <path>`); accept net-new only.
+
 

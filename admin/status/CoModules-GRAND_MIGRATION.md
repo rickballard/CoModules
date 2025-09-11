@@ -1,3 +1,4 @@
+<!-- status: stub; target: 150+ words -->
 # CoModules: GRAND MIGRATION ✅
 
 This repo now has:
@@ -9,3 +10,4 @@ This repo now has:
 
 _Stamped by automation:_
 2025-08-23T21:55:48
+

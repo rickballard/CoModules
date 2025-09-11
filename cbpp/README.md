@@ -1,3 +1,4 @@
+<!-- status: stub; target: 150+ words -->
 # CBPP — Civic Best Practices Pipeline
 
 Reusable building blocks:
@@ -6,3 +7,4 @@ Reusable building blocks:
 - `evidence/` — Evidence Table patterns and examples
 
 Keep it short. Each file should be human-readable and script-friendly.
+

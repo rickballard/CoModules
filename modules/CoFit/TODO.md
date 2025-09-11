@@ -1,3 +1,4 @@
+<!-- status: stub; target: 150+ words -->
 # TODO: CoFit Engine (CivicFit)
 
 This doc tracks known deliverables and ideas related to the CivicFit Engine ("CoFit").
@@ -36,3 +37,4 @@ This doc tracks known deliverables and ideas related to the CivicFit Engine ("Co
 - App interface
 - Visual charts of fit zones
 - Importable scores into GIBindex
+

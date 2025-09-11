@@ -1,11 +1,9 @@
 # Repo Status / KPIs
 
-- **Timestamp:** 2025-09-11T17:40:06Z
-- **Files:** 74
-- **Text docs:** 40
-- **Total words (approx):** 3080
-- **Stub threshold:** 
-- **Stubs detected:** 0
+- **Timestamp:** 2025-09-11T21:02:43Z
+- **Files:** 80
+- **Text docs:** 46
+- **Total words (approx):** 3874
+- **Stub threshold:** 150
 - **LFS objects (working copy):** 0
 
-See also: [Stub audit CSV](stubs-20250911-133959.csv)
