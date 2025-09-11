@@ -1,3 +1,4 @@
+<!-- status: stub; target: 150+ words -->
 # Core Assumption (Canonical Pointer)
 
 The canonical text lives in **CoCivium** at:
