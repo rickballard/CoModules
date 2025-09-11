@@ -1,5 +1,6 @@
 <!-- status: stub; target: 150+ words -->
 <!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # CoBots — Civic Archetype Personas
 
 To avoid “faceless automation,” CoCivium frames automated IdeaCard inflows through **CoBots** —
@@ -19,5 +20,6 @@ they are transparently run by GitHub Actions and always labeled `ai-generated`.
 - **CoBotCitizen** — everyday practicality; onboarding, accessibility
 
 Each week, a single CoBot persona is rotated and authors one IdeaCard draft PR.
+
 
 
