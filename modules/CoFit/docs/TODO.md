@@ -1,4 +1,5 @@
 <!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # CoFit TODO (Next Build Phase)
 
 - [ ] Define first 3 archetypes (activist, policy skeptic, civic admin)
@@ -10,4 +11,5 @@
 
 > All commits should use relaxed merge protocol for CoModules.
 > CoCivium remains relaxed during migration window.
+
 
