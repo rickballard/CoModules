@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "https://example.com/ftw/guardian-policy.schema.json",
+  "version": "0.1",
+  "timezone": "America/Toronto",
+  "categories": {
+    "learning": ["khanacademy.org", "code.org", "scratch.mit.edu", "minecraft.education"],
+    "neutral":  ["docs.google.com", "notion.so"],
+    "games":    ["roblox", "robloxplayerbeta.exe", "Minecraft.exe", "steam.exe", "fortniteclient-win64-shipping.exe"],
+    "blocked":  []
+  },
+  "budgets": {
+    "games_minutes_per_day": 60,
+    "learning_minimum_per_day": 20,
+    "grace_minutes_before_prompt": 5,
+    "cooldown_minutes_after_decline": 10,
+    "daily_cutoff_hour": 21
+  },
+  "downtime": [
+    {"days": ["Mon","Tue","Wed","Thu","Fri"], "start": "20:30", "end": "07:00"},
+    {"days": ["Sat","Sun"],                   "start": "21:00", "end": "08:00"}
+  ],
+  "quests": {
+    "duration_minutes": 10,
+    "reward_minutes_games": 15,
+    "daily_reward_cap_minutes": 45
+  },
+  "ui": {
+    "kid_name": "Alex",
+    "coach_name": "Coach Pixel",
+    "tone": "short-clear-positive"
+  },
+  "storage": {
+    "state_dir": "%LOCALAPPDATA%/FTWGuardian/state",
+    "logs_dir":  "%LOCALAPPDATA%/FTWGuardian/logs"
+  }
+}
