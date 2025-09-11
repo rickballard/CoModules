@@ -1,0 +1,42 @@
+﻿{
+    "title":  "Fix The World — The Game (FTW/FTWTG): Guardian Mode (Screen Nanny / Coach Mode)",
+    "summary":  "Extend FTW with an optional kid-facing coach that balances screen time by exchanging short, themed learning quests for additional game time; integrates with OS parental controls; neurodiversity-friendly (visual prompts, predictable transitions, token economy).",
+    "rationale":  "Existing parental-control tools enforce time but don’t engage; ADHD/autistic kids respond better to immediate, concrete rewards and visual schedules. FTW can turn friction into fun by embedding just-in-time learning quests tied to the game’s narrative.",
+    "impact":  "Higher adherence with less conflict; measurable gains in learning minutes; differentiated edtech positioning; school-safe while still fun. Creates a moat vs. blunt blockers by pairing engagement with enforcement.",
+    "dependencies":  [
+                         "OS parental APIs / ScreenTime connectors",
+                         "Quest generator via LLM (Khan-style prompts, age-appropriate)",
+                         "Local usage sensor (active window + domain)",
+                         "Rewards bridge into FTW economy (tokens/skins/levels)"
+                     ],
+    "tags":  [
+                 "ftw",
+                 "ftwtg",
+                 "guardian-mode",
+                 "screen-nanny",
+                 "coach-mode",
+                 "neurodiversity",
+                 "edtech",
+                 "roadmap"
+             ],
+    "sensitivity":  "internal",
+    "source_session":  "FTW discovery 2025-09-11",
+    "capability_handles":  [
+                               "cap.ftw.guardian.observe",
+                               "cap.ftw.guardian.nudge",
+                               "cap.ftw.guardian.reward",
+                               "cap.ftw.guardian.parent-config"
+                           ],
+    "status":  "proposed",
+    "owners":  [
+                   "Rick"
+               ],
+    "next_steps":  [
+                       "Spec minimal local watcher + JSON policy (Windows first).",
+                       "Define 12 ‘starter quests’ mapped to FTW narrative arcs.",
+                       "Prototype rewards: 1 quest =\u003e +15 min game (daily cap).",
+                       "Parent dashboard: Downtime blocks + whitelist learning apps.",
+                       "IRB/ethics checklist for logging + transparency (kid-facing)."
+                   ],
+    "repo_hint":  "CoModules/FTWTG (new) or existing FTW subtree if discovered."
+}
