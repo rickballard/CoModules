@@ -1,3 +1,6 @@
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # Next for Fix the World
 
 - [ ] Define MVP feature set
@@ -7,3 +10,6 @@
 - [ ] Create sound FX list and badge schema
 
 PR: #<replace-with-final-PR-number>
+
+
+

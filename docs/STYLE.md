@@ -1,3 +1,6 @@
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # Style & Conventions
 
 ## Linking & references — Best Practice (BP)
@@ -13,4 +16,7 @@
 - **Images:** prefer relative repo paths. For cross-repo permanence, use SHA-pinned raw URLs.
 - **Avoid ../ chains** in top-level docs; restructure or link by permalink.
 - **Separators:** Use / for repo paths/globs; backslashes only for true Windows filesystem examples.
+
+
+
 

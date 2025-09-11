@@ -1,3 +1,6 @@
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # CoTicker (Concept + Prototype)
 A thin, always-on-top ticker just above the taskbar that streams BPOE/CoAgent status:
 - cryptic status **blocks** (icons + colors), expandable on click (later)
@@ -14,3 +17,6 @@ A thin, always-on-top ticker just above the taskbar that streams BPOE/CoAgent st
 - “Do not overlap input fields” heuristics
 - Web overlay alt (Electron / PWA) for cross-platform
 - CoAgent integration: watcher heartbeats, TTFD, consent prompts, repo ops
+
+
+

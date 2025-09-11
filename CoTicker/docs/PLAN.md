@@ -1,3 +1,6 @@
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # CoTicker — Product Plan (public)
 
 ## Problem
@@ -25,3 +28,6 @@ Ambient, low-friction status channel (watcher heartbeats, TTFD, consent).
 ## Risks
 - Overlay interference → click-through + heuristics
 - Perf/tearing → throttle + 60fps cap + GPU accel
+
+
+

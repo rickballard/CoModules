@@ -1,3 +1,6 @@
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # Glossary (abbrev → full name → what it is)
 
 | Abbrev | Full name | What it is / where used |
@@ -9,3 +12,6 @@
 | OCDS | Open Contracting Data Standard | Standard for publishing procurement data (tenders, awards, contracts). |
 | BODS | Beneficial Ownership Data Standard | Standard for publishing who really owns companies. |
 | IRM | Independent Reporting Mechanism | OGP’s evidence review approach; we mirror it in Evidence Tables. |
+
+
+

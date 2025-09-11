@@ -1,3 +1,6 @@
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
+<!-- status: stub; target: 150+ words -->
 # AI System Registry & Impact Tracker (alpha)
 
 Publish a public-facing AI inventory aligned to
@@ -15,4 +18,7 @@ Publish a public-facing AI inventory aligned to
 - Publish a static page from these records (generator WIP)
 
 See also: `../../GLOSSARY.md`.
+
+
+
 
