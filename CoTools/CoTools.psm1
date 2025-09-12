@@ -1,4 +1,4 @@
-﻿function Get-CoRepos { [CmdletBinding()]
+function Get-CoRepos { [CmdletBinding()]
   param([string]$Root = (Join-Path $HOME "Documents\GitHub"), [string]$Pattern='^(Co.*|GIBindex)$')
   Get-ChildItem -Directory -LiteralPath $Root |
     Where-Object Name -match $Pattern |
@@ -149,7 +149,7 @@ function New-CCScroll { [CmdletBinding()]
       ADV =Join-Path $base 'docs\index\ADVICE-INDEX.md'
     }
     $links = foreach($k in $path.Keys){ if(Test-Path $path[$k]){ $rel=$path[$k].Replace($target.Path,'').TrimStart('\'); "[{0}]({1})" -f $k,$rel.Replace('\','/') } }
-    $label = if($r.Name -eq 'Civium'){'CoCivium'} else {$r.Name}
+    $label = if($r.Name -eq 'CoCivium'){'CoCivium'} else {$r.Name}
     $lines += ("- **{0}** {1} {2}" -f $label,$emd, ($links -join ' | '))
   }
   $outDir = Join-Path $target.Path 'docs\scrolls'; [IO.Directory]::CreateDirectory($outDir)|Out-Null
@@ -168,13 +168,13 @@ function Fix-CoCiviumNames { [CmdletBinding(SupportsShouldProcess)]
     $changed=@()
     foreach($f in $files){
       $text = Get-Content -LiteralPath $f.FullName -Raw -Encoding UTF8
-      if($text -match '\bCivium\b' -and $PSCmdlet.ShouldProcess($f.FullName, "Replace 'Civium' -> 'CoCivium'")){
+      if($text -match '\bCivium\b' -and $PSCmdlet.ShouldProcess($f.FullName, "Replace 'CoCivium' -> 'CoCivium'")){
         $fixed = [regex]::Replace($text, '\bCivium\b', 'CoCivium')
         if($fixed -ne $text){ [IO.File]::WriteAllText($f.FullName,$fixed,[Text.UTF8Encoding]::new($false)); $changed += $f.FullName }
       }
     }
     if($Commit -and $changed.Count -gt 0 -and $r.HasGit){
-      Push-Location $r.Path; try{ git add -- $changed; git commit -m "docs: normalize 'Civium' references to 'CoCivium'" *> $null; git push -q 2>$null | Out-Null } finally { Pop-Location }
+      Push-Location $r.Path; try{ git add -- $changed; git commit -m "docs: normalize 'CoCivium' references to 'CoCivium'" *> $null; git push -q 2>$null | Out-Null } finally { Pop-Location }
     }
   }
 }
