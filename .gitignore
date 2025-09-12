@@ -18,3 +18,7 @@ Thumbs.db
 
 
 *.ps1.bak_*
+
+docs/status/HEALTH.json
+
+docs/status/bpoe-log.ndjson
