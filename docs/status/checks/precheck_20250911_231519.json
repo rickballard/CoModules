@@ -1,0 +1,166 @@
+{
+  "captured_at_utc": "2025-09-12T03:15:19.2834982Z",
+  "ai_prefs": {
+    "preferred_model": "GPT-5 Thinking",
+    "min_version_date": "2025-09",
+    "allow_fallback": true,
+    "notes": "Use the reasoning model; prefer latest minor."
+  },
+  "mode": "Staged",
+  "files_checked": [
+    "FTWTG/BadExample.ps1",
+    "FTWTG/DO-CoSnap.ps1",
+    "FTWTG/DO-Precheck.ps1",
+    "FTWTG/Start-CoHeartbeat.ps1",
+    "FTWTG/Start-Workbench.ps1",
+    "FTWTG/Tests/Precheck.Tests.ps1",
+    "FTWTG/Tests/WorkbenchLegal.Tests.ps1"
+  ],
+  "pssa_available": true,
+  "results": [
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\BadExample.ps1",
+      "analyzer": null,
+      "ast": [
+        {
+          "extent": "Remove-Item $HOME\\Nope -Recurse",
+          "message": "\"Remove-Item\" without -WhatIf/-Confirm",
+          "rule": "MissingWhatIfOrConfirm"
+        },
+        {
+          "extent": "",
+          "message": "Set-StrictMode -Version Latest missing",
+          "rule": "RequireStrictMode"
+        },
+        {
+          "extent": "",
+          "message": "$ErrorActionPreference should be 'Stop'",
+          "rule": "RequireEAPStop"
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\DO-CoSnap.ps1",
+      "analyzer": {
+        "rule": "PSAvoidUsingWriteHost",
+        "severity": 1,
+        "message": "File 'DO-CoSnap.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+        "line": 11,
+        "column": 1
+      },
+      "ast": [
+        {
+          "extent": "Copy-Item -Force $hit.FullName $dst",
+          "message": "\"Copy-Item\" without -WhatIf/-Confirm",
+          "rule": "MissingWhatIfOrConfirm"
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\DO-Precheck.ps1",
+      "analyzer": [
+        {
+          "rule": "PSAvoidUsingEmptyCatchBlock",
+          "severity": 1,
+          "message": "Empty catch block is used. Please use Write-Error or throw statements in catch blocks.",
+          "line": 15,
+          "column": 119
+        },
+        {
+          "rule": "PSAvoidUsingEmptyCatchBlock",
+          "severity": 1,
+          "message": "Empty catch block is used. Please use Write-Error or throw statements in catch blocks.",
+          "line": 82,
+          "column": 7
+        },
+        {
+          "rule": "PSAvoidUsingWriteHost",
+          "severity": 1,
+          "message": "File 'DO-Precheck.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+          "line": 115,
+          "column": 3
+        },
+        {
+          "rule": "PSUseApprovedVerbs",
+          "severity": 1,
+          "message": "The cmdlet 'Ensure-PSSA' uses an unapproved verb.",
+          "line": 13,
+          "column": 10
+        }
+      ],
+      "ast": []
+    },
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\Start-CoHeartbeat.ps1",
+      "analyzer": {
+        "rule": "PSAvoidUsingWriteHost",
+        "severity": 1,
+        "message": "File 'Start-CoHeartbeat.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+        "line": 11,
+        "column": 1
+      },
+      "ast": []
+    },
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\Start-Workbench.ps1",
+      "analyzer": [
+        {
+          "rule": "PSAvoidUsingWriteHost",
+          "severity": 1,
+          "message": "File 'Start-Workbench.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+          "line": 35,
+          "column": 3
+        },
+        {
+          "rule": "PSAvoidUsingWriteHost",
+          "severity": 1,
+          "message": "File 'Start-Workbench.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+          "line": 36,
+          "column": 17
+        },
+        {
+          "rule": "PSAvoidUsingWriteHost",
+          "severity": 1,
+          "message": "File 'Start-Workbench.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+          "line": 37,
+          "column": 13
+        },
+        {
+          "rule": "PSAvoidUsingWriteHost",
+          "severity": 1,
+          "message": "File 'Start-Workbench.ps1' uses Write-Host. Avoid using Write-Host because it might not work in all hosts, does not work when there is no host, and (prior to PS 5.0) cannot be suppressed, captured, or redirected. Instead, use Write-Output, Write-Verbose, or Write-Information.",
+          "line": 38,
+          "column": 10
+        }
+      ],
+      "ast": []
+    },
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\Tests\\Precheck.Tests.ps1",
+      "analyzer": null,
+      "ast": [
+        {
+          "extent": "",
+          "message": "$ErrorActionPreference should be 'Stop'",
+          "rule": "RequireEAPStop"
+        }
+      ]
+    },
+    {
+      "file": "C:\\Users\\Chris\\Documents\\GitHub\\CoModules\\FTWTG\\Tests\\WorkbenchLegal.Tests.ps1",
+      "analyzer": null,
+      "ast": [
+        {
+          "extent": "",
+          "message": "$ErrorActionPreference should be 'Stop'",
+          "rule": "RequireEAPStop"
+        }
+      ]
+    }
+  ],
+  "pester": {
+    "passed": 10,
+    "result": "pass",
+    "failed": 0
+  }
+}

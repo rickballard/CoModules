@@ -1,7 +1,12 @@
 #!/bin/sh
+<<<<<<< Updated upstream
 pwsh -NoProfile -ExecutionPolicy Bypass -File "C:/Users/Chris/Documents/GitHub/CoModules/DO-GUARD.ps1"
 RES=$?
 if [ $RES -ne 0 ]; then
   echo "Pre-commit blocked by DO-GUARD."
   exit $RES
 fi
+=======
+PW=$(command -v pwsh || command -v pwsh.exe)
+"$PW" -NoProfile -File "FTWTG/DO-Precheck.ps1" -Mode Staged || exit 1
+>>>>>>> Stashed changes
