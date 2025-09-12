@@ -16,3 +16,5 @@ Thumbs.db
 *.bak
 
 
+
+*.ps1.bak_*
