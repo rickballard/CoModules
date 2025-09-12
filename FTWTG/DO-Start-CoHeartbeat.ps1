@@ -11,3 +11,4 @@ Register-ObjectEvent -InputObject $timer -EventName Elapsed -SourceIdentifier $s
 } | Out-Null
 $timer.Start()
 Write-Host "[HB] Co heartbeat every $Minutes min → $HOME\CoTemps\status\hb.json"
+

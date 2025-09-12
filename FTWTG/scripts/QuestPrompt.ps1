@@ -1,4 +1,4 @@
-param([string]$PolicyPath = "$PSScriptRoot/../policy/guardian-policy.json", [ValidateSet("quest","movement")] [string]$Mode = "quest")
+﻿param([string]$PolicyPath = "$PSScriptRoot/../policy/guardian-policy.json", [ValidateSet("quest","movement")] [string]$Mode = "quest")
 Set-StrictMode -Version Latest; $ErrorActionPreference='Stop'
 function Load-Policy($path) { (Get-Content -LiteralPath $path -Raw) | ConvertFrom-Json }
 $policy = Load-Policy -path (Resolve-Path $PolicyPath)
@@ -37,3 +37,4 @@ $earned = @{
   }
 }
 $earned | ConvertTo-Json -Depth 5 | Out-File -LiteralPath $earnedPath -Encoding UTF8
+

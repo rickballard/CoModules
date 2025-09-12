@@ -7,3 +7,4 @@ Describe "BPOE canon" {
     ((Get-Content "$PSScriptRoot/../../docs/status/BPOE.md" -Raw) -match '(?m)^##\s+Wisdom Log') | Should -BeTrue
   }
 }
+

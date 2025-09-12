@@ -8,3 +8,4 @@ $paths += (Join-Path $repo "docs\status\BPOE.md")
 $paths  = $paths | Where-Object { Test-Path $_ }
 if ($paths.Count -gt 0) { foreach ($p in $paths) { Start-Process $p } }
 else { Write-Host "No docs found yet in $repo\docs." }
+

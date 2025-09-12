@@ -12,3 +12,4 @@ if ($existing){ $existing.panel=$panel; if($Browser){ $existing.browser=$Browser
 else { $map.bindings = @($map.bindings + [pscustomobject]@{ title=$Title; browser=$Browser; panel=$panel }) }
 ($map|ConvertTo-Json -Depth 6)|Out-File -LiteralPath $mapPath -Encoding UTF8
 Write-Host "[PAIR] Chat '$Title' -> $panel"
+

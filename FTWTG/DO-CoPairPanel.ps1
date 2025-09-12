@@ -10,3 +10,4 @@ $map.ps | Add-Member -Force -NotePropertyName $Panel -NotePropertyValue ([pscust
 ($map|ConvertTo-Json -Depth 6)|Out-File -LiteralPath $mapPath -Encoding UTF8
 $host.UI.RawUI.WindowTitle = "$Panel — PS7"
 Write-Host "[PAIR] Registered this PS window as $Panel"
+

@@ -20,3 +20,4 @@ if($Commit){
   catch { Write-Warning ("Git commit skipped: {0}" -f $_.Exception.Message) }
   finally { Pop-Location }
 }
+

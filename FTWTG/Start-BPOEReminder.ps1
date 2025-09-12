@@ -10,3 +10,4 @@ Register-ObjectEvent -InputObject $timer -EventName Elapsed -SourceIdentifier $s
 } | Out-Null
 $timer.Start()
 Write-Host "[OK] BPOE reminder every $Minutes min. Use 'Get-EventSubscriber | Unregister-Event' to stop."
+

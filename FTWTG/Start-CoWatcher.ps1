@@ -15,9 +15,10 @@ if (-not $mtx.WaitOne(0,$false)) { Write-Host "[Watcher] already running"; retur
 try {
   Write-Host "[Watcher] online → $Temps"
   while ($true) {
-    & (Join-Path $root 'Process-CoQueue.ps1') -Temps $Temps
+    & (Join-Path $root 'DO-Process-CoQueue.ps1') -Temps $Temps
     Start-Sleep -Milliseconds 400
   }
 } finally {
   $mtx.ReleaseMutex() | Out-Null
 }
+

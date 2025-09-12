@@ -44,3 +44,4 @@ $files | Sort-Object LastWriteTime | ForEach-Object {
     if (Test-Path $claimed) { Remove-Item -LiteralPath $claimed -Force }
   }
 }
+

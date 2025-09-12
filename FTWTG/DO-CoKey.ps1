@@ -15,3 +15,4 @@ $meta = [ordered]@{ at=(Get-Date).ToString("o"); title=$Title; proc=$Proc; mode=
 $file = Join-Path $queue ("context_" + (Get-Date -Format "yyyyMMdd_HHmmss") + ".json")
 ($meta | ConvertTo-Json -Depth 6) | Out-File -LiteralPath $file -Encoding UTF8
 Write-Host "[OK] Context trigger -> $file"
+
