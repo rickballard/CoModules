@@ -1,19 +1,19 @@
 # Repo Health
 
-- Updated 2025-09-12 20:05:55Z — _via Write-RepoHealth_
+- Updated 2025-09-15 06:43:05Z — _via Write-RepoHealth_
 - GM PR bloat: 0 open gm/* PR(s)
 - Open issues: 5
-- Advice/TODO hits: 135 (TODO: 102)
+- Advice/TODO hits: 556 (TODO: 495)
 
 ## Open Issues
-- [17](https://github.com/rickballard/CoModules/issues/17) Grand migration: apply BPOE/CoPing across repos []
-- [18](https://github.com/rickballard/CoModules/issues/18) Post-migration: enable minimal protections on main []
-- [20](https://github.com/rickballard/CoModules/issues/20) Checkpoint 20250907-084853 []
-- [23](https://github.com/rickballard/CoModules/issues/23) Migration handoff pointer []
-- [26](https://github.com/rickballard/CoModules/issues/26) RFC-0001 (DO Header Spec v0.1) ΓÇö Public Comment $start ΓåÆ $end []
+- [#17](https://github.com/rickballard/CoModules/issues/17) Grand migration: apply BPOE/CoPing across repos []
+- [#18](https://github.com/rickballard/CoModules/issues/18) Post-migration: enable minimal protections on main []
+- [#20](https://github.com/rickballard/CoModules/issues/20) Checkpoint 20250907-084853 []
+- [#23](https://github.com/rickballard/CoModules/issues/23) Migration handoff pointer []
+- [#26](https://github.com/rickballard/CoModules/issues/26) RFC-0001 (DO Header Spec v0.1) ΓÇö Public Comment $start ΓåÆ $end []
 
 ## Branches (local, newest first)
-- feat/ftw-guardian-mode-seed (2025-09-12 20:03:11Z)
+- feat/ftw-guardian-mode-seed (2025-09-15 06:15:49Z)
 - gm/CoModules-20250911-172359 (2025-09-11 21:57:58Z)
 - gm/CoModules-20250911-171118 (2025-09-11 21:14:56Z)
 - gm/CoModules-20250911-165926 (2025-09-11 21:02:47Z)

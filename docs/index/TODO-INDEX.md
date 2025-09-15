@@ -11,93 +11,486 @@ _Filtered to TODO/FIXME only._
 - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
 - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
 - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
-- CoTools\CoTools.psm1 (L124) — if(git status --porcelain -- 'docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md'){
-- CoTools\CoTools.psm1 (L125) — git add 'docs/status/HEALTH.md' 'docs/index/ADVICE-INDEX.md' 'docs/index/TODO-INDEX.md'
-- CoTools\CoTools.psm1 (L126) — git commit -m "docs(health): refresh Health + Advice/TODO indices" *> $null
-- CoTools\CoTools.psm1 (L147) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- CoTools\CoTools.psm1 (L124) — $paths = @('docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md')
+- CoTools\CoTools.psm1 (L127) — git commit -m "docs(health): refresh Health + Advice/TODO indices" 2>$null | Out-Null
+- CoTools\CoTools.psm1 (L148) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
 - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
 - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
-- docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
-- docs\index\ADVICE-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
-- docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
-- docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
-- docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
-- docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
-- docs\index\ADVICE-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
-- docs\index\ADVICE-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
-- docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
-- docs\index\ADVICE-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
-- docs\index\ADVICE-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
-- docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
-- docs\index\ADVICE-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
-- docs\index\ADVICE-INDEX.md (L37) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
-- docs\index\ADVICE-INDEX.md (L43) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
-- docs\index\ADVICE-INDEX.md (L44) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
-- docs\index\ADVICE-INDEX.md (L48) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
-- docs\index\ADVICE-INDEX.md (L52) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
-- docs\index\ADVICE-INDEX.md (L53) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
-- docs\index\ADVICE-INDEX.md (L65) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
-- docs\index\ADVICE-INDEX.md (L66) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
-- docs\index\ADVICE-INDEX.md (L72) — ## TODO-INDEX.md
-- docs\index\ADVICE-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
-- docs\index\ADVICE-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
-- docs\index\ADVICE-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
-- docs\index\ADVICE-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
-- docs\index\ADVICE-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
-- docs\index\ADVICE-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
-- docs\index\ADVICE-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
-- docs\index\ADVICE-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
-- docs\index\ADVICE-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
-- docs\index\ADVICE-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
-- docs\index\ADVICE-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
-- docs\index\ADVICE-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
-- docs\index\ADVICE-INDEX.md (L86) — ## TODO.md
-- docs\index\ADVICE-INDEX.md (L87) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
-- docs\index\ADVICE-INDEX.md (L88) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
-- docs\index\ADVICE-INDEX.md (L89) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L21) — - docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L22) — - docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L21) — - docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L25) — - docs\index\ADVICE-INDEX.md (L22) — - docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L26) — - docs\index\ADVICE-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L33) — - docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L34) — - docs\index\ADVICE-INDEX.md (L31) — - docs\index\ADVICE-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L35) — - docs\index\ADVICE-INDEX.md (L32) — - docs\index\ADVICE-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L36) — - docs\index\ADVICE-INDEX.md (L33) — - docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L38) — - docs\index\ADVICE-INDEX.md (L35) — - docs\index\ADVICE-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L39) — - docs\index\ADVICE-INDEX.md (L36) — - docs\index\ADVICE-INDEX.md (L37) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L41) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\ADVICE-INDEX.md (L43) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L42) — - docs\index\ADVICE-INDEX.md (L39) — - docs\index\ADVICE-INDEX.md (L44) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L44) — - docs\index\ADVICE-INDEX.md (L41) — - docs\index\ADVICE-INDEX.md (L48) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\ADVICE-INDEX.md (L46) — - docs\index\ADVICE-INDEX.md (L43) — - docs\index\ADVICE-INDEX.md (L52) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L47) — - docs\index\ADVICE-INDEX.md (L44) — - docs\index\ADVICE-INDEX.md (L53) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L51) — - docs\index\ADVICE-INDEX.md (L48) — - docs\index\ADVICE-INDEX.md (L65) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L52) — - docs\index\ADVICE-INDEX.md (L49) — - docs\index\ADVICE-INDEX.md (L66) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L55) — - docs\index\ADVICE-INDEX.md (L52) — - docs\index\ADVICE-INDEX.md (L72) — ## TODO-INDEX.md
+- docs\index\ADVICE-INDEX.md (L56) — - docs\index\ADVICE-INDEX.md (L53) — - docs\index\ADVICE-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L57) — - docs\index\ADVICE-INDEX.md (L54) — - docs\index\ADVICE-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L58) — - docs\index\ADVICE-INDEX.md (L55) — - docs\index\ADVICE-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L59) — - docs\index\ADVICE-INDEX.md (L56) — - docs\index\ADVICE-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L60) — - docs\index\ADVICE-INDEX.md (L57) — - docs\index\ADVICE-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L61) — - docs\index\ADVICE-INDEX.md (L58) — - docs\index\ADVICE-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L62) — - docs\index\ADVICE-INDEX.md (L59) — - docs\index\ADVICE-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L63) — - docs\index\ADVICE-INDEX.md (L60) — - docs\index\ADVICE-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L64) — - docs\index\ADVICE-INDEX.md (L61) — - docs\index\ADVICE-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L65) — - docs\index\ADVICE-INDEX.md (L62) — - docs\index\ADVICE-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L66) — - docs\index\ADVICE-INDEX.md (L63) — - docs\index\ADVICE-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L67) — - docs\index\ADVICE-INDEX.md (L64) — - docs\index\ADVICE-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L68) — - docs\index\ADVICE-INDEX.md (L65) — - docs\index\ADVICE-INDEX.md (L86) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L69) — - docs\index\ADVICE-INDEX.md (L66) — - docs\index\ADVICE-INDEX.md (L87) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L70) — - docs\index\ADVICE-INDEX.md (L67) — - docs\index\ADVICE-INDEX.md (L88) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L71) — - docs\index\ADVICE-INDEX.md (L68) — - docs\index\ADVICE-INDEX.md (L89) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L72) — - docs\index\ADVICE-INDEX.md (L71) — - CoTools\CoTools.psm1 (L16) — foreach($rel in 'docs','docs/status','docs/plan','docs/vision','docs/mission','docs/index','docs/ideas','docs/todo'){
+- docs\index\ADVICE-INDEX.md (L73) — - docs\index\ADVICE-INDEX.md (L72) — - CoTools\CoTools.psm1 (L25) — $rx = '(?i)\b(TODO|FIXME|IDEA|NOTE|ADVICE|ADVICE[-_ ]BOMB|CARD|MASTER PLAN)\b'
+- docs\index\ADVICE-INDEX.md (L74) — - docs\index\ADVICE-INDEX.md (L73) — - CoTools\CoTools.psm1 (L38) — $adv = @('# Advice / TODO Index','','_Auto-generated; edit source files to change items._','')
+- docs\index\ADVICE-INDEX.md (L76) — - docs\index\ADVICE-INDEX.md (L75) — - CoTools\CoTools.psm1 (L49) — $todo = $hits | Where-Object { $_.Text -match '(?i)\b(TODO|FIXME)\b' }
+- docs\index\ADVICE-INDEX.md (L77) — - docs\index\ADVICE-INDEX.md (L76) — - CoTools\CoTools.psm1 (L50) — $todoLines = @('# TODO Summary','','_Filtered to TODO/FIXME only._','')
+- docs\index\ADVICE-INDEX.md (L78) — - docs\index\ADVICE-INDEX.md (L77) — - CoTools\CoTools.psm1 (L51) — foreach($t in ($todo | Sort-Object File,Line)){
+- docs\index\ADVICE-INDEX.md (L79) — - docs\index\ADVICE-INDEX.md (L78) — - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
+- docs\index\ADVICE-INDEX.md (L80) — - docs\index\ADVICE-INDEX.md (L79) — - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
+- docs\index\ADVICE-INDEX.md (L81) — - docs\index\ADVICE-INDEX.md (L80) — - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
+- docs\index\ADVICE-INDEX.md (L82) — - docs\index\ADVICE-INDEX.md (L81) — - CoTools\CoTools.psm1 (L124) — if(git status --porcelain -- 'docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md'){
+- docs\index\ADVICE-INDEX.md (L83) — - docs\index\ADVICE-INDEX.md (L82) — - CoTools\CoTools.psm1 (L125) — git add 'docs/status/HEALTH.md' 'docs/index/ADVICE-INDEX.md' 'docs/index/TODO-INDEX.md'
+- docs\index\ADVICE-INDEX.md (L84) — - docs\index\ADVICE-INDEX.md (L83) — - CoTools\CoTools.psm1 (L126) — git commit -m "docs(health): refresh Health + Advice/TODO indices" *> $null
+- docs\index\ADVICE-INDEX.md (L85) — - docs\index\ADVICE-INDEX.md (L84) — - CoTools\CoTools.psm1 (L147) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- docs\index\ADVICE-INDEX.md (L88) — - docs\index\ADVICE-INDEX.md (L91) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L89) — - docs\index\ADVICE-INDEX.md (L92) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L91) — - docs\index\ADVICE-INDEX.md (L98) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L92) — - docs\index\ADVICE-INDEX.md (L99) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L94) — - docs\index\ADVICE-INDEX.md (L103) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 56 (TODO: 36)
+- docs\index\ADVICE-INDEX.md (L96) — - docs\index\ADVICE-INDEX.md (L107) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L97) — - docs\index\ADVICE-INDEX.md (L108) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L101) — - docs\index\ADVICE-INDEX.md (L120) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L102) — - docs\index\ADVICE-INDEX.md (L121) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L105) — - docs\index\ADVICE-INDEX.md (L127) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L106) — - docs\index\ADVICE-INDEX.md (L128) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L107) — - docs\index\ADVICE-INDEX.md (L129) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L108) — - docs\index\ADVICE-INDEX.md (L130) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L109) — - docs\index\ADVICE-INDEX.md (L132) — ## TODO-INDEX.md
+- docs\index\ADVICE-INDEX.md (L110) — - docs\index\ADVICE-INDEX.md (L133) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L111) — - docs\index\ADVICE-INDEX.md (L134) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L112) — - docs\index\ADVICE-INDEX.md (L135) — - docs\index\TODO-INDEX.md (L5) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\ADVICE-INDEX.md (L113) — - docs\index\ADVICE-INDEX.md (L136) — - docs\index\TODO-INDEX.md (L6) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L114) — - docs\index\ADVICE-INDEX.md (L137) — - docs\index\TODO-INDEX.md (L7) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L115) — - docs\index\ADVICE-INDEX.md (L138) — - docs\index\TODO-INDEX.md (L8) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L116) — - docs\index\ADVICE-INDEX.md (L139) — - docs\index\TODO-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L117) — - docs\index\ADVICE-INDEX.md (L140) — - docs\index\TODO-INDEX.md (L10) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L118) — - docs\index\ADVICE-INDEX.md (L141) — - docs\index\TODO-INDEX.md (L11) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L119) — - docs\index\ADVICE-INDEX.md (L142) — - docs\index\TODO-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L120) — - docs\index\ADVICE-INDEX.md (L143) — - docs\index\TODO-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L121) — - docs\index\ADVICE-INDEX.md (L144) — - docs\index\TODO-INDEX.md (L14) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L122) — - docs\index\ADVICE-INDEX.md (L145) — - docs\index\TODO-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L123) — - docs\index\ADVICE-INDEX.md (L146) — - docs\index\TODO-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L124) — - docs\index\ADVICE-INDEX.md (L147) — - docs\index\TODO-INDEX.md (L17) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L125) — - docs\index\ADVICE-INDEX.md (L148) — - docs\index\TODO-INDEX.md (L18) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L126) — - docs\index\ADVICE-INDEX.md (L149) — - docs\index\TODO-INDEX.md (L19) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L127) — - docs\index\ADVICE-INDEX.md (L150) — - docs\index\TODO-INDEX.md (L20) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L128) — - docs\index\ADVICE-INDEX.md (L151) — - docs\index\TODO-INDEX.md (L21) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L129) — - docs\index\ADVICE-INDEX.md (L152) — - docs\index\TODO-INDEX.md (L22) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L130) — - docs\index\ADVICE-INDEX.md (L153) — - docs\index\TODO-INDEX.md (L23) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L131) — - docs\index\ADVICE-INDEX.md (L154) — - docs\index\TODO-INDEX.md (L24) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L132) — - docs\index\ADVICE-INDEX.md (L155) — - docs\index\TODO-INDEX.md (L25) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L133) — - docs\index\ADVICE-INDEX.md (L156) — - docs\index\TODO-INDEX.md (L26) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L134) — - docs\index\ADVICE-INDEX.md (L157) — - docs\index\TODO-INDEX.md (L27) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L135) — - docs\index\ADVICE-INDEX.md (L158) — - docs\index\TODO-INDEX.md (L28) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L136) — - docs\index\ADVICE-INDEX.md (L159) — - docs\index\TODO-INDEX.md (L29) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L137) — - docs\index\ADVICE-INDEX.md (L160) — - docs\index\TODO-INDEX.md (L30) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L138) — - docs\index\ADVICE-INDEX.md (L161) — - docs\index\TODO-INDEX.md (L31) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L139) — - docs\index\ADVICE-INDEX.md (L162) — - docs\index\TODO-INDEX.md (L32) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L140) — - docs\index\ADVICE-INDEX.md (L163) — - docs\index\TODO-INDEX.md (L33) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L141) — - docs\index\ADVICE-INDEX.md (L164) — - docs\index\TODO-INDEX.md (L34) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\ADVICE-INDEX.md (L142) — - docs\index\ADVICE-INDEX.md (L165) — - docs\index\TODO-INDEX.md (L35) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L143) — - docs\index\ADVICE-INDEX.md (L166) — - docs\index\TODO-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L144) — - docs\index\ADVICE-INDEX.md (L167) — - docs\index\TODO-INDEX.md (L37) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L145) — - docs\index\ADVICE-INDEX.md (L168) — - docs\index\TODO-INDEX.md (L38) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L146) — - docs\index\ADVICE-INDEX.md (L169) — - docs\index\TODO-INDEX.md (L39) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L147) — - docs\index\ADVICE-INDEX.md (L170) — - docs\index\TODO-INDEX.md (L40) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L150) — - CoTools\CoTools.psm1 (L16) — foreach($rel in 'docs','docs/status','docs/plan','docs/vision','docs/mission','docs/index','docs/ideas','docs/todo'){
+- docs\index\ADVICE-INDEX.md (L151) — - CoTools\CoTools.psm1 (L25) — $rx = '(?i)\b(TODO|FIXME|IDEA|NOTE|ADVICE|ADVICE[-_ ]BOMB|CARD|MASTER PLAN)\b'
+- docs\index\ADVICE-INDEX.md (L152) — - CoTools\CoTools.psm1 (L38) — $adv = @('# Advice / TODO Index','','_Auto-generated; edit source files to change items._','')
+- docs\index\ADVICE-INDEX.md (L154) — - CoTools\CoTools.psm1 (L49) — $todo = $hits | Where-Object { $_.Text -match '(?i)\b(TODO|FIXME)\b' }
+- docs\index\ADVICE-INDEX.md (L155) — - CoTools\CoTools.psm1 (L50) — $todoLines = @('# TODO Summary','','_Filtered to TODO/FIXME only._','')
+- docs\index\ADVICE-INDEX.md (L156) — - CoTools\CoTools.psm1 (L51) — foreach($t in ($todo | Sort-Object File,Line)){
+- docs\index\ADVICE-INDEX.md (L157) — - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
+- docs\index\ADVICE-INDEX.md (L158) — - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
+- docs\index\ADVICE-INDEX.md (L159) — - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
+- docs\index\ADVICE-INDEX.md (L160) — - CoTools\CoTools.psm1 (L124) — $paths = @('docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md')
+- docs\index\ADVICE-INDEX.md (L161) — - CoTools\CoTools.psm1 (L127) — git commit -m "docs(health): refresh Health + Advice/TODO indices" 2>$null | Out-Null
+- docs\index\ADVICE-INDEX.md (L162) — - CoTools\CoTools.psm1 (L148) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- docs\index\ADVICE-INDEX.md (L169) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L170) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L176) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L177) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L184) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 135 (TODO: 102)
+- docs\index\ADVICE-INDEX.md (L188) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L189) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L201) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L202) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L208) — ## TODO-INDEX.md
+- docs\index\ADVICE-INDEX.md (L209) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L210) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L211) — - docs\index\TODO-INDEX.md (L5) — - CoTools\CoTools.psm1 (L16) — foreach($rel in 'docs','docs/status','docs/plan','docs/vision','docs/mission','docs/index','docs/ideas','docs/todo'){
+- docs\index\ADVICE-INDEX.md (L212) — - docs\index\TODO-INDEX.md (L6) — - CoTools\CoTools.psm1 (L25) — $rx = '(?i)\b(TODO|FIXME|IDEA|NOTE|ADVICE|ADVICE[-_ ]BOMB|CARD|MASTER PLAN)\b'
+- docs\index\ADVICE-INDEX.md (L213) — - docs\index\TODO-INDEX.md (L7) — - CoTools\CoTools.psm1 (L38) — $adv = @('# Advice / TODO Index','','_Auto-generated; edit source files to change items._','')
+- docs\index\ADVICE-INDEX.md (L214) — - docs\index\TODO-INDEX.md (L8) — - CoTools\CoTools.psm1 (L49) — $todo = $hits | Where-Object { $_.Text -match '(?i)\b(TODO|FIXME)\b' }
+- docs\index\ADVICE-INDEX.md (L215) — - docs\index\TODO-INDEX.md (L9) — - CoTools\CoTools.psm1 (L50) — $todoLines = @('# TODO Summary','','_Filtered to TODO/FIXME only._','')
+- docs\index\ADVICE-INDEX.md (L216) — - docs\index\TODO-INDEX.md (L10) — - CoTools\CoTools.psm1 (L51) — foreach($t in ($todo | Sort-Object File,Line)){
+- docs\index\ADVICE-INDEX.md (L217) — - docs\index\TODO-INDEX.md (L11) — - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
+- docs\index\ADVICE-INDEX.md (L218) — - docs\index\TODO-INDEX.md (L12) — - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
+- docs\index\ADVICE-INDEX.md (L219) — - docs\index\TODO-INDEX.md (L13) — - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
+- docs\index\ADVICE-INDEX.md (L220) — - docs\index\TODO-INDEX.md (L14) — - CoTools\CoTools.psm1 (L124) — if(git status --porcelain -- 'docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md'){
+- docs\index\ADVICE-INDEX.md (L221) — - docs\index\TODO-INDEX.md (L15) — - CoTools\CoTools.psm1 (L125) — git add 'docs/status/HEALTH.md' 'docs/index/ADVICE-INDEX.md' 'docs/index/TODO-INDEX.md'
+- docs\index\ADVICE-INDEX.md (L222) — - docs\index\TODO-INDEX.md (L16) — - CoTools\CoTools.psm1 (L126) — git commit -m "docs(health): refresh Health + Advice/TODO indices" *> $null
+- docs\index\ADVICE-INDEX.md (L223) — - docs\index\TODO-INDEX.md (L17) — - CoTools\CoTools.psm1 (L147) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- docs\index\ADVICE-INDEX.md (L224) — - docs\index\TODO-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\ADVICE-INDEX.md (L225) — - docs\index\TODO-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\ADVICE-INDEX.md (L226) — - docs\index\TODO-INDEX.md (L20) — - docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L227) — - docs\index\TODO-INDEX.md (L21) — - docs\index\ADVICE-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L228) — - docs\index\TODO-INDEX.md (L22) — - docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L229) — - docs\index\TODO-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L230) — - docs\index\TODO-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L231) — - docs\index\TODO-INDEX.md (L25) — - docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L232) — - docs\index\TODO-INDEX.md (L26) — - docs\index\ADVICE-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L233) — - docs\index\TODO-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L234) — - docs\index\TODO-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L235) — - docs\index\TODO-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L236) — - docs\index\TODO-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L237) — - docs\index\TODO-INDEX.md (L31) — - docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L238) — - docs\index\TODO-INDEX.md (L32) — - docs\index\ADVICE-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L239) — - docs\index\TODO-INDEX.md (L33) — - docs\index\ADVICE-INDEX.md (L37) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L240) — - docs\index\TODO-INDEX.md (L34) — - docs\index\ADVICE-INDEX.md (L43) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L241) — - docs\index\TODO-INDEX.md (L35) — - docs\index\ADVICE-INDEX.md (L44) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L242) — - docs\index\TODO-INDEX.md (L36) — - docs\index\ADVICE-INDEX.md (L48) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\ADVICE-INDEX.md (L243) — - docs\index\TODO-INDEX.md (L37) — - docs\index\ADVICE-INDEX.md (L52) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L244) — - docs\index\TODO-INDEX.md (L38) — - docs\index\ADVICE-INDEX.md (L53) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L245) — - docs\index\TODO-INDEX.md (L39) — - docs\index\ADVICE-INDEX.md (L65) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L246) — - docs\index\TODO-INDEX.md (L40) — - docs\index\ADVICE-INDEX.md (L66) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L247) — - docs\index\TODO-INDEX.md (L41) — - docs\index\ADVICE-INDEX.md (L72) — ## TODO-INDEX.md
+- docs\index\ADVICE-INDEX.md (L248) — - docs\index\TODO-INDEX.md (L42) — - docs\index\ADVICE-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L249) — - docs\index\TODO-INDEX.md (L43) — - docs\index\ADVICE-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L250) — - docs\index\TODO-INDEX.md (L44) — - docs\index\ADVICE-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L251) — - docs\index\TODO-INDEX.md (L45) — - docs\index\ADVICE-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L252) — - docs\index\TODO-INDEX.md (L46) — - docs\index\ADVICE-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L253) — - docs\index\TODO-INDEX.md (L47) — - docs\index\ADVICE-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L254) — - docs\index\TODO-INDEX.md (L48) — - docs\index\ADVICE-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L255) — - docs\index\TODO-INDEX.md (L49) — - docs\index\ADVICE-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L256) — - docs\index\TODO-INDEX.md (L50) — - docs\index\ADVICE-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L257) — - docs\index\TODO-INDEX.md (L51) — - docs\index\ADVICE-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L258) — - docs\index\TODO-INDEX.md (L52) — - docs\index\ADVICE-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L259) — - docs\index\TODO-INDEX.md (L53) — - docs\index\ADVICE-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L260) — - docs\index\TODO-INDEX.md (L54) — - docs\index\ADVICE-INDEX.md (L86) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L261) — - docs\index\TODO-INDEX.md (L55) — - docs\index\ADVICE-INDEX.md (L87) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L262) — - docs\index\TODO-INDEX.md (L56) — - docs\index\ADVICE-INDEX.md (L88) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L263) — - docs\index\TODO-INDEX.md (L57) — - docs\index\ADVICE-INDEX.md (L89) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L264) — - docs\index\TODO-INDEX.md (L58) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L265) — - docs\index\TODO-INDEX.md (L59) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L266) — - docs\index\TODO-INDEX.md (L60) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L267) — - docs\index\TODO-INDEX.md (L61) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L268) — - docs\index\TODO-INDEX.md (L62) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L269) — - docs\index\TODO-INDEX.md (L63) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L270) — - docs\index\TODO-INDEX.md (L64) — - docs\index\TODO-INDEX.md (L5) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\ADVICE-INDEX.md (L271) — - docs\index\TODO-INDEX.md (L65) — - docs\index\TODO-INDEX.md (L6) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L272) — - docs\index\TODO-INDEX.md (L66) — - docs\index\TODO-INDEX.md (L7) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L273) — - docs\index\TODO-INDEX.md (L67) — - docs\index\TODO-INDEX.md (L8) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L274) — - docs\index\TODO-INDEX.md (L68) — - docs\index\TODO-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L275) — - docs\index\TODO-INDEX.md (L69) — - docs\index\TODO-INDEX.md (L10) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L276) — - docs\index\TODO-INDEX.md (L70) — - docs\index\TODO-INDEX.md (L11) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L277) — - docs\index\TODO-INDEX.md (L71) — - docs\index\TODO-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L278) — - docs\index\TODO-INDEX.md (L72) — - docs\index\TODO-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L279) — - docs\index\TODO-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L14) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L280) — - docs\index\TODO-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L281) — - docs\index\TODO-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L282) — - docs\index\TODO-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L17) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\ADVICE-INDEX.md (L283) — - docs\index\TODO-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L18) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L284) — - docs\index\TODO-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L19) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L285) — - docs\index\TODO-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L20) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L286) — - docs\index\TODO-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L21) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L287) — - docs\index\TODO-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L22) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\ADVICE-INDEX.md (L288) — - docs\index\TODO-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L23) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\ADVICE-INDEX.md (L289) — - docs\index\TODO-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L24) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L290) — - docs\index\TODO-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L25) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\ADVICE-INDEX.md (L291) — - docs\index\TODO-INDEX.md (L85) — - docs\index\TODO-INDEX.md (L26) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\ADVICE-INDEX.md (L292) — - docs\index\TODO-INDEX.md (L86) — - docs\index\TODO-INDEX.md (L27) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\ADVICE-INDEX.md (L293) — - docs\index\TODO-INDEX.md (L87) — - docs\index\TODO-INDEX.md (L28) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L294) — - docs\index\TODO-INDEX.md (L88) — - docs\index\TODO-INDEX.md (L29) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L295) — - docs\index\TODO-INDEX.md (L89) — - docs\index\TODO-INDEX.md (L30) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L296) — - docs\index\TODO-INDEX.md (L90) — - docs\index\TODO-INDEX.md (L31) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L297) — - docs\index\TODO-INDEX.md (L91) — - docs\index\TODO-INDEX.md (L32) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L298) — - docs\index\TODO-INDEX.md (L92) — - docs\index\TODO-INDEX.md (L33) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L299) — - docs\index\TODO-INDEX.md (L93) — - docs\index\TODO-INDEX.md (L34) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\ADVICE-INDEX.md (L300) — - docs\index\TODO-INDEX.md (L94) — - docs\index\TODO-INDEX.md (L35) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L301) — - docs\index\TODO-INDEX.md (L95) — - docs\index\TODO-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L302) — - docs\index\TODO-INDEX.md (L96) — - docs\index\TODO-INDEX.md (L37) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L303) — - docs\index\TODO-INDEX.md (L97) — - docs\index\TODO-INDEX.md (L38) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L304) — - docs\index\TODO-INDEX.md (L98) — - docs\index\TODO-INDEX.md (L39) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L305) — - docs\index\TODO-INDEX.md (L99) — - docs\index\TODO-INDEX.md (L40) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L306) — - docs\index\TODO-INDEX.md (L100) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 56 (TODO: 36)
+- docs\index\ADVICE-INDEX.md (L307) — - docs\index\TODO-INDEX.md (L101) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\ADVICE-INDEX.md (L308) — - docs\index\TODO-INDEX.md (L102) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\ADVICE-INDEX.md (L309) — - docs\index\TODO-INDEX.md (L103) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L310) — - docs\index\TODO-INDEX.md (L104) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\ADVICE-INDEX.md (L311) — - docs\index\TODO-INDEX.md (L105) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\ADVICE-INDEX.md (L312) — - docs\index\TODO-INDEX.md (L106) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L314) — ## TODO.md
+- docs\index\ADVICE-INDEX.md (L315) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\ADVICE-INDEX.md (L316) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\ADVICE-INDEX.md (L317) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
 - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
 - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
 - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
 - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
 - docs\index\TODO-INDEX.md (L1) — # TODO Summary
 - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
-- docs\index\TODO-INDEX.md (L5) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
-- docs\index\TODO-INDEX.md (L6) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
-- docs\index\TODO-INDEX.md (L7) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
-- docs\index\TODO-INDEX.md (L8) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
-- docs\index\TODO-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
-- docs\index\TODO-INDEX.md (L10) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
-- docs\index\TODO-INDEX.md (L11) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
-- docs\index\TODO-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
-- docs\index\TODO-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
-- docs\index\TODO-INDEX.md (L14) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
-- docs\index\TODO-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
-- docs\index\TODO-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
-- docs\index\TODO-INDEX.md (L17) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
-- docs\index\TODO-INDEX.md (L18) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
-- docs\index\TODO-INDEX.md (L19) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
-- docs\index\TODO-INDEX.md (L20) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
-- docs\index\TODO-INDEX.md (L21) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
-- docs\index\TODO-INDEX.md (L22) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
-- docs\index\TODO-INDEX.md (L23) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
-- docs\index\TODO-INDEX.md (L24) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
-- docs\index\TODO-INDEX.md (L25) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
-- docs\index\TODO-INDEX.md (L26) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
-- docs\index\TODO-INDEX.md (L27) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
-- docs\index\TODO-INDEX.md (L28) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
-- docs\index\TODO-INDEX.md (L29) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
-- docs\index\TODO-INDEX.md (L30) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
-- docs\index\TODO-INDEX.md (L31) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
-- docs\index\TODO-INDEX.md (L32) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
-- docs\index\TODO-INDEX.md (L33) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
-- docs\index\TODO-INDEX.md (L34) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
-- docs\index\TODO-INDEX.md (L35) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
-- docs\index\TODO-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
-- docs\index\TODO-INDEX.md (L37) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
-- docs\index\TODO-INDEX.md (L38) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
-- docs\index\TODO-INDEX.md (L39) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
-- docs\index\TODO-INDEX.md (L40) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
-- docs\status\HEALTH.md (L6) — - Advice/TODO hits: 56 (TODO: 36)
+- docs\index\TODO-INDEX.md (L5) — - CoTools\CoTools.psm1 (L16) — foreach($rel in 'docs','docs/status','docs/plan','docs/vision','docs/mission','docs/index','docs/ideas','docs/todo'){
+- docs\index\TODO-INDEX.md (L6) — - CoTools\CoTools.psm1 (L25) — $rx = '(?i)\b(TODO|FIXME|IDEA|NOTE|ADVICE|ADVICE[-_ ]BOMB|CARD|MASTER PLAN)\b'
+- docs\index\TODO-INDEX.md (L7) — - CoTools\CoTools.psm1 (L38) — $adv = @('# Advice / TODO Index','','_Auto-generated; edit source files to change items._','')
+- docs\index\TODO-INDEX.md (L8) — - CoTools\CoTools.psm1 (L49) — $todo = $hits | Where-Object { $_.Text -match '(?i)\b(TODO|FIXME)\b' }
+- docs\index\TODO-INDEX.md (L9) — - CoTools\CoTools.psm1 (L50) — $todoLines = @('# TODO Summary','','_Filtered to TODO/FIXME only._','')
+- docs\index\TODO-INDEX.md (L10) — - CoTools\CoTools.psm1 (L51) — foreach($t in ($todo | Sort-Object File,Line)){
+- docs\index\TODO-INDEX.md (L11) — - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
+- docs\index\TODO-INDEX.md (L12) — - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
+- docs\index\TODO-INDEX.md (L13) — - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
+- docs\index\TODO-INDEX.md (L14) — - CoTools\CoTools.psm1 (L124) — $paths = @('docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md')
+- docs\index\TODO-INDEX.md (L15) — - CoTools\CoTools.psm1 (L127) — git commit -m "docs(health): refresh Health + Advice/TODO indices" 2>$null | Out-Null
+- docs\index\TODO-INDEX.md (L16) — - CoTools\CoTools.psm1 (L148) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- docs\index\TODO-INDEX.md (L17) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L20) — - docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L21) — - docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L22) — - docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L21) — - docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L25) — - docs\index\ADVICE-INDEX.md (L22) — - docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L26) — - docs\index\ADVICE-INDEX.md (L26) — - docs\index\ADVICE-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\TODO-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L31) — - docs\index\ADVICE-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L32) — - docs\index\ADVICE-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L31) — - docs\index\ADVICE-INDEX.md (L33) — - docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L32) — - docs\index\ADVICE-INDEX.md (L35) — - docs\index\ADVICE-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L33) — - docs\index\ADVICE-INDEX.md (L36) — - docs\index\ADVICE-INDEX.md (L37) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L34) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\ADVICE-INDEX.md (L43) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L35) — - docs\index\ADVICE-INDEX.md (L39) — - docs\index\ADVICE-INDEX.md (L44) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L36) — - docs\index\ADVICE-INDEX.md (L41) — - docs\index\ADVICE-INDEX.md (L48) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\TODO-INDEX.md (L37) — - docs\index\ADVICE-INDEX.md (L43) — - docs\index\ADVICE-INDEX.md (L52) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L38) — - docs\index\ADVICE-INDEX.md (L44) — - docs\index\ADVICE-INDEX.md (L53) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L39) — - docs\index\ADVICE-INDEX.md (L48) — - docs\index\ADVICE-INDEX.md (L65) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L40) — - docs\index\ADVICE-INDEX.md (L49) — - docs\index\ADVICE-INDEX.md (L66) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L41) — - docs\index\ADVICE-INDEX.md (L52) — - docs\index\ADVICE-INDEX.md (L72) — ## TODO-INDEX.md
+- docs\index\TODO-INDEX.md (L42) — - docs\index\ADVICE-INDEX.md (L53) — - docs\index\ADVICE-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L43) — - docs\index\ADVICE-INDEX.md (L54) — - docs\index\ADVICE-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L44) — - docs\index\ADVICE-INDEX.md (L55) — - docs\index\ADVICE-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L45) — - docs\index\ADVICE-INDEX.md (L56) — - docs\index\ADVICE-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L46) — - docs\index\ADVICE-INDEX.md (L57) — - docs\index\ADVICE-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L47) — - docs\index\ADVICE-INDEX.md (L58) — - docs\index\ADVICE-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L48) — - docs\index\ADVICE-INDEX.md (L59) — - docs\index\ADVICE-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L49) — - docs\index\ADVICE-INDEX.md (L60) — - docs\index\ADVICE-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L50) — - docs\index\ADVICE-INDEX.md (L61) — - docs\index\ADVICE-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L51) — - docs\index\ADVICE-INDEX.md (L62) — - docs\index\ADVICE-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L52) — - docs\index\ADVICE-INDEX.md (L63) — - docs\index\ADVICE-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L53) — - docs\index\ADVICE-INDEX.md (L64) — - docs\index\ADVICE-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L54) — - docs\index\ADVICE-INDEX.md (L65) — - docs\index\ADVICE-INDEX.md (L86) — ## TODO.md
+- docs\index\TODO-INDEX.md (L55) — - docs\index\ADVICE-INDEX.md (L66) — - docs\index\ADVICE-INDEX.md (L87) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L56) — - docs\index\ADVICE-INDEX.md (L67) — - docs\index\ADVICE-INDEX.md (L88) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L57) — - docs\index\ADVICE-INDEX.md (L68) — - docs\index\ADVICE-INDEX.md (L89) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L58) — - docs\index\ADVICE-INDEX.md (L71) — - CoTools\CoTools.psm1 (L16) — foreach($rel in 'docs','docs/status','docs/plan','docs/vision','docs/mission','docs/index','docs/ideas','docs/todo'){
+- docs\index\TODO-INDEX.md (L59) — - docs\index\ADVICE-INDEX.md (L72) — - CoTools\CoTools.psm1 (L25) — $rx = '(?i)\b(TODO|FIXME|IDEA|NOTE|ADVICE|ADVICE[-_ ]BOMB|CARD|MASTER PLAN)\b'
+- docs\index\TODO-INDEX.md (L60) — - docs\index\ADVICE-INDEX.md (L73) — - CoTools\CoTools.psm1 (L38) — $adv = @('# Advice / TODO Index','','_Auto-generated; edit source files to change items._','')
+- docs\index\TODO-INDEX.md (L61) — - docs\index\ADVICE-INDEX.md (L75) — - CoTools\CoTools.psm1 (L49) — $todo = $hits | Where-Object { $_.Text -match '(?i)\b(TODO|FIXME)\b' }
+- docs\index\TODO-INDEX.md (L62) — - docs\index\ADVICE-INDEX.md (L76) — - CoTools\CoTools.psm1 (L50) — $todoLines = @('# TODO Summary','','_Filtered to TODO/FIXME only._','')
+- docs\index\TODO-INDEX.md (L63) — - docs\index\ADVICE-INDEX.md (L77) — - CoTools\CoTools.psm1 (L51) — foreach($t in ($todo | Sort-Object File,Line)){
+- docs\index\TODO-INDEX.md (L64) — - docs\index\ADVICE-INDEX.md (L78) — - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
+- docs\index\TODO-INDEX.md (L65) — - docs\index\ADVICE-INDEX.md (L79) — - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
+- docs\index\TODO-INDEX.md (L66) — - docs\index\ADVICE-INDEX.md (L80) — - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
+- docs\index\TODO-INDEX.md (L67) — - docs\index\ADVICE-INDEX.md (L81) — - CoTools\CoTools.psm1 (L124) — if(git status --porcelain -- 'docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md'){
+- docs\index\TODO-INDEX.md (L68) — - docs\index\ADVICE-INDEX.md (L82) — - CoTools\CoTools.psm1 (L125) — git add 'docs/status/HEALTH.md' 'docs/index/ADVICE-INDEX.md' 'docs/index/TODO-INDEX.md'
+- docs\index\TODO-INDEX.md (L69) — - docs\index\ADVICE-INDEX.md (L83) — - CoTools\CoTools.psm1 (L126) — git commit -m "docs(health): refresh Health + Advice/TODO indices" *> $null
+- docs\index\TODO-INDEX.md (L70) — - docs\index\ADVICE-INDEX.md (L84) — - CoTools\CoTools.psm1 (L147) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- docs\index\TODO-INDEX.md (L71) — - docs\index\ADVICE-INDEX.md (L91) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L72) — - docs\index\ADVICE-INDEX.md (L92) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L73) — - docs\index\ADVICE-INDEX.md (L98) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L74) — - docs\index\ADVICE-INDEX.md (L99) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L75) — - docs\index\ADVICE-INDEX.md (L103) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 56 (TODO: 36)
+- docs\index\TODO-INDEX.md (L76) — - docs\index\ADVICE-INDEX.md (L107) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L77) — - docs\index\ADVICE-INDEX.md (L108) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L78) — - docs\index\ADVICE-INDEX.md (L120) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L79) — - docs\index\ADVICE-INDEX.md (L121) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L80) — - docs\index\ADVICE-INDEX.md (L127) — ## TODO.md
+- docs\index\TODO-INDEX.md (L81) — - docs\index\ADVICE-INDEX.md (L128) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L82) — - docs\index\ADVICE-INDEX.md (L129) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L83) — - docs\index\ADVICE-INDEX.md (L130) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L84) — - docs\index\ADVICE-INDEX.md (L132) — ## TODO-INDEX.md
+- docs\index\TODO-INDEX.md (L85) — - docs\index\ADVICE-INDEX.md (L133) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L86) — - docs\index\ADVICE-INDEX.md (L134) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L87) — - docs\index\ADVICE-INDEX.md (L135) — - docs\index\TODO-INDEX.md (L5) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L88) — - docs\index\ADVICE-INDEX.md (L136) — - docs\index\TODO-INDEX.md (L6) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L89) — - docs\index\ADVICE-INDEX.md (L137) — - docs\index\TODO-INDEX.md (L7) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L90) — - docs\index\ADVICE-INDEX.md (L138) — - docs\index\TODO-INDEX.md (L8) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L91) — - docs\index\ADVICE-INDEX.md (L139) — - docs\index\TODO-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L92) — - docs\index\ADVICE-INDEX.md (L140) — - docs\index\TODO-INDEX.md (L10) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L93) — - docs\index\ADVICE-INDEX.md (L141) — - docs\index\TODO-INDEX.md (L11) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L94) — - docs\index\ADVICE-INDEX.md (L142) — - docs\index\TODO-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L95) — - docs\index\ADVICE-INDEX.md (L143) — - docs\index\TODO-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L96) — - docs\index\ADVICE-INDEX.md (L144) — - docs\index\TODO-INDEX.md (L14) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\TODO-INDEX.md (L97) — - docs\index\ADVICE-INDEX.md (L145) — - docs\index\TODO-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L98) — - docs\index\ADVICE-INDEX.md (L146) — - docs\index\TODO-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L99) — - docs\index\ADVICE-INDEX.md (L147) — - docs\index\TODO-INDEX.md (L17) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L100) — - docs\index\ADVICE-INDEX.md (L148) — - docs\index\TODO-INDEX.md (L18) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L101) — - docs\index\ADVICE-INDEX.md (L149) — - docs\index\TODO-INDEX.md (L19) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L102) — - docs\index\ADVICE-INDEX.md (L150) — - docs\index\TODO-INDEX.md (L20) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L103) — - docs\index\ADVICE-INDEX.md (L151) — - docs\index\TODO-INDEX.md (L21) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L104) — - docs\index\ADVICE-INDEX.md (L152) — - docs\index\TODO-INDEX.md (L22) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L105) — - docs\index\ADVICE-INDEX.md (L153) — - docs\index\TODO-INDEX.md (L23) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L106) — - docs\index\ADVICE-INDEX.md (L154) — - docs\index\TODO-INDEX.md (L24) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L107) — - docs\index\ADVICE-INDEX.md (L155) — - docs\index\TODO-INDEX.md (L25) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L108) — - docs\index\ADVICE-INDEX.md (L156) — - docs\index\TODO-INDEX.md (L26) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L109) — - docs\index\ADVICE-INDEX.md (L157) — - docs\index\TODO-INDEX.md (L27) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L110) — - docs\index\ADVICE-INDEX.md (L158) — - docs\index\TODO-INDEX.md (L28) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L111) — - docs\index\ADVICE-INDEX.md (L159) — - docs\index\TODO-INDEX.md (L29) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L112) — - docs\index\ADVICE-INDEX.md (L160) — - docs\index\TODO-INDEX.md (L30) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L113) — - docs\index\ADVICE-INDEX.md (L161) — - docs\index\TODO-INDEX.md (L31) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L114) — - docs\index\ADVICE-INDEX.md (L162) — - docs\index\TODO-INDEX.md (L32) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L115) — - docs\index\ADVICE-INDEX.md (L163) — - docs\index\TODO-INDEX.md (L33) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L116) — - docs\index\ADVICE-INDEX.md (L164) — - docs\index\TODO-INDEX.md (L34) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\TODO-INDEX.md (L117) — - docs\index\ADVICE-INDEX.md (L165) — - docs\index\TODO-INDEX.md (L35) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L118) — - docs\index\ADVICE-INDEX.md (L166) — - docs\index\TODO-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L119) — - docs\index\ADVICE-INDEX.md (L167) — - docs\index\TODO-INDEX.md (L37) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L120) — - docs\index\ADVICE-INDEX.md (L168) — - docs\index\TODO-INDEX.md (L38) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L121) — - docs\index\ADVICE-INDEX.md (L169) — - docs\index\TODO-INDEX.md (L39) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L122) — - docs\index\ADVICE-INDEX.md (L170) — - docs\index\TODO-INDEX.md (L40) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L123) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L124) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L125) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L126) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L127) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L128) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L129) — - docs\index\TODO-INDEX.md (L5) — - CoTools\CoTools.psm1 (L16) — foreach($rel in 'docs','docs/status','docs/plan','docs/vision','docs/mission','docs/index','docs/ideas','docs/todo'){
+- docs\index\TODO-INDEX.md (L130) — - docs\index\TODO-INDEX.md (L6) — - CoTools\CoTools.psm1 (L25) — $rx = '(?i)\b(TODO|FIXME|IDEA|NOTE|ADVICE|ADVICE[-_ ]BOMB|CARD|MASTER PLAN)\b'
+- docs\index\TODO-INDEX.md (L131) — - docs\index\TODO-INDEX.md (L7) — - CoTools\CoTools.psm1 (L38) — $adv = @('# Advice / TODO Index','','_Auto-generated; edit source files to change items._','')
+- docs\index\TODO-INDEX.md (L132) — - docs\index\TODO-INDEX.md (L8) — - CoTools\CoTools.psm1 (L49) — $todo = $hits | Where-Object { $_.Text -match '(?i)\b(TODO|FIXME)\b' }
+- docs\index\TODO-INDEX.md (L133) — - docs\index\TODO-INDEX.md (L9) — - CoTools\CoTools.psm1 (L50) — $todoLines = @('# TODO Summary','','_Filtered to TODO/FIXME only._','')
+- docs\index\TODO-INDEX.md (L134) — - docs\index\TODO-INDEX.md (L10) — - CoTools\CoTools.psm1 (L51) — foreach($t in ($todo | Sort-Object File,Line)){
+- docs\index\TODO-INDEX.md (L135) — - docs\index\TODO-INDEX.md (L11) — - CoTools\CoTools.psm1 (L55) — [IO.File]::WriteAllText((Join-Path $outDir 'TODO-INDEX.md'), ($todoLines -join "`n") + "`n", $utf8)
+- docs\index\TODO-INDEX.md (L136) — - docs\index\TODO-INDEX.md (L12) — - CoTools\CoTools.psm1 (L57) — [pscustomobject]@{ Count = @($hits).Count; Todo = @($todo).Count }
+- docs\index\TODO-INDEX.md (L137) — - docs\index\TODO-INDEX.md (L13) — - CoTools\CoTools.psm1 (L90) — ("- Advice/TODO hits: {0} (TODO: {1})" -f $harv.Count, $harv.Todo),'')
+- docs\index\TODO-INDEX.md (L138) — - docs\index\TODO-INDEX.md (L14) — - CoTools\CoTools.psm1 (L124) — if(git status --porcelain -- 'docs/status/HEALTH.md','docs/index/ADVICE-INDEX.md','docs/index/TODO-INDEX.md'){
+- docs\index\TODO-INDEX.md (L139) — - docs\index\TODO-INDEX.md (L15) — - CoTools\CoTools.psm1 (L125) — git add 'docs/status/HEALTH.md' 'docs/index/ADVICE-INDEX.md' 'docs/index/TODO-INDEX.md'
+- docs\index\TODO-INDEX.md (L140) — - docs\index\TODO-INDEX.md (L16) — - CoTools\CoTools.psm1 (L126) — git commit -m "docs(health): refresh Health + Advice/TODO indices" *> $null
+- docs\index\TODO-INDEX.md (L141) — - docs\index\TODO-INDEX.md (L17) — - CoTools\CoTools.psm1 (L147) — TODO=Join-Path $base 'docs\index\TODO-INDEX.md'
+- docs\index\TODO-INDEX.md (L142) — - docs\index\TODO-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L143) — - docs\index\TODO-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L144) — - docs\index\TODO-INDEX.md (L20) — - docs\index\ADVICE-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L145) — - docs\index\TODO-INDEX.md (L21) — - docs\index\ADVICE-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L146) — - docs\index\TODO-INDEX.md (L22) — - docs\index\ADVICE-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L147) — - docs\index\TODO-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L148) — - docs\index\TODO-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L18) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L149) — - docs\index\TODO-INDEX.md (L25) — - docs\index\ADVICE-INDEX.md (L19) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L150) — - docs\index\TODO-INDEX.md (L26) — - docs\index\ADVICE-INDEX.md (L23) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L151) — - docs\index\TODO-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L152) — - docs\index\TODO-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L27) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\TODO-INDEX.md (L153) — - docs\index\TODO-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L28) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L154) — - docs\index\TODO-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L29) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L155) — - docs\index\TODO-INDEX.md (L31) — - docs\index\ADVICE-INDEX.md (L30) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L156) — - docs\index\TODO-INDEX.md (L32) — - docs\index\ADVICE-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L157) — - docs\index\TODO-INDEX.md (L33) — - docs\index\ADVICE-INDEX.md (L37) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L158) — - docs\index\TODO-INDEX.md (L34) — - docs\index\ADVICE-INDEX.md (L43) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L159) — - docs\index\TODO-INDEX.md (L35) — - docs\index\ADVICE-INDEX.md (L44) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L160) — - docs\index\TODO-INDEX.md (L36) — - docs\index\ADVICE-INDEX.md (L48) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\TODO-INDEX.md (L161) — - docs\index\TODO-INDEX.md (L37) — - docs\index\ADVICE-INDEX.md (L52) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L162) — - docs\index\TODO-INDEX.md (L38) — - docs\index\ADVICE-INDEX.md (L53) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L163) — - docs\index\TODO-INDEX.md (L39) — - docs\index\ADVICE-INDEX.md (L65) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L164) — - docs\index\TODO-INDEX.md (L40) — - docs\index\ADVICE-INDEX.md (L66) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L165) — - docs\index\TODO-INDEX.md (L41) — - docs\index\ADVICE-INDEX.md (L72) — ## TODO-INDEX.md
+- docs\index\TODO-INDEX.md (L166) — - docs\index\TODO-INDEX.md (L42) — - docs\index\ADVICE-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L167) — - docs\index\TODO-INDEX.md (L43) — - docs\index\ADVICE-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L168) — - docs\index\TODO-INDEX.md (L44) — - docs\index\ADVICE-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L169) — - docs\index\TODO-INDEX.md (L45) — - docs\index\ADVICE-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L170) — - docs\index\TODO-INDEX.md (L46) — - docs\index\ADVICE-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L171) — - docs\index\TODO-INDEX.md (L47) — - docs\index\ADVICE-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L172) — - docs\index\TODO-INDEX.md (L48) — - docs\index\ADVICE-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L173) — - docs\index\TODO-INDEX.md (L49) — - docs\index\ADVICE-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L174) — - docs\index\TODO-INDEX.md (L50) — - docs\index\ADVICE-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L175) — - docs\index\TODO-INDEX.md (L51) — - docs\index\ADVICE-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L176) — - docs\index\TODO-INDEX.md (L52) — - docs\index\ADVICE-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L177) — - docs\index\TODO-INDEX.md (L53) — - docs\index\ADVICE-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L178) — - docs\index\TODO-INDEX.md (L54) — - docs\index\ADVICE-INDEX.md (L86) — ## TODO.md
+- docs\index\TODO-INDEX.md (L179) — - docs\index\TODO-INDEX.md (L55) — - docs\index\ADVICE-INDEX.md (L87) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L180) — - docs\index\TODO-INDEX.md (L56) — - docs\index\ADVICE-INDEX.md (L88) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L181) — - docs\index\TODO-INDEX.md (L57) — - docs\index\ADVICE-INDEX.md (L89) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L182) — - docs\index\TODO-INDEX.md (L58) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L183) — - docs\index\TODO-INDEX.md (L59) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L184) — - docs\index\TODO-INDEX.md (L60) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L185) — - docs\index\TODO-INDEX.md (L61) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L186) — - docs\index\TODO-INDEX.md (L62) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L187) — - docs\index\TODO-INDEX.md (L63) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L188) — - docs\index\TODO-INDEX.md (L64) — - docs\index\TODO-INDEX.md (L5) — - docs\index\ADVICE-INDEX.md (L1) — # Advice / TODO Index
+- docs\index\TODO-INDEX.md (L189) — - docs\index\TODO-INDEX.md (L65) — - docs\index\TODO-INDEX.md (L6) — - docs\index\ADVICE-INDEX.md (L12) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L190) — - docs\index\TODO-INDEX.md (L66) — - docs\index\TODO-INDEX.md (L7) — - docs\index\ADVICE-INDEX.md (L13) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L191) — - docs\index\TODO-INDEX.md (L67) — - docs\index\TODO-INDEX.md (L8) — - docs\index\ADVICE-INDEX.md (L19) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L192) — - docs\index\TODO-INDEX.md (L68) — - docs\index\TODO-INDEX.md (L9) — - docs\index\ADVICE-INDEX.md (L20) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L193) — - docs\index\TODO-INDEX.md (L69) — - docs\index\TODO-INDEX.md (L10) — - docs\index\ADVICE-INDEX.md (L24) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L194) — - docs\index\TODO-INDEX.md (L70) — - docs\index\TODO-INDEX.md (L11) — - docs\index\ADVICE-INDEX.md (L25) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L195) — - docs\index\TODO-INDEX.md (L71) — - docs\index\TODO-INDEX.md (L12) — - docs\index\ADVICE-INDEX.md (L37) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L196) — - docs\index\TODO-INDEX.md (L72) — - docs\index\TODO-INDEX.md (L13) — - docs\index\ADVICE-INDEX.md (L38) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L197) — - docs\index\TODO-INDEX.md (L73) — - docs\index\TODO-INDEX.md (L14) — - docs\index\ADVICE-INDEX.md (L44) — ## TODO.md
+- docs\index\TODO-INDEX.md (L198) — - docs\index\TODO-INDEX.md (L74) — - docs\index\TODO-INDEX.md (L15) — - docs\index\ADVICE-INDEX.md (L45) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L199) — - docs\index\TODO-INDEX.md (L75) — - docs\index\TODO-INDEX.md (L16) — - docs\index\ADVICE-INDEX.md (L46) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L200) — - docs\index\TODO-INDEX.md (L76) — - docs\index\TODO-INDEX.md (L17) — - docs\index\ADVICE-INDEX.md (L47) — - modules\CoFit\TODO.md (L17) — - [ ] “Fit my idea” wizard for contributors
+- docs\index\TODO-INDEX.md (L201) — - docs\index\TODO-INDEX.md (L77) — - docs\index\TODO-INDEX.md (L18) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L202) — - docs\index\TODO-INDEX.md (L78) — - docs\index\TODO-INDEX.md (L19) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L203) — - docs\index\TODO-INDEX.md (L79) — - docs\index\TODO-INDEX.md (L20) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L204) — - docs\index\TODO-INDEX.md (L80) — - docs\index\TODO-INDEX.md (L21) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L205) — - docs\index\TODO-INDEX.md (L81) — - docs\index\TODO-INDEX.md (L22) — - docs\index\TODO-INDEX.md (L1) — # TODO Summary
+- docs\index\TODO-INDEX.md (L206) — - docs\index\TODO-INDEX.md (L82) — - docs\index\TODO-INDEX.md (L23) — - docs\index\TODO-INDEX.md (L3) — _Filtered to TODO/FIXME only._
+- docs\index\TODO-INDEX.md (L207) — - docs\index\TODO-INDEX.md (L83) — - docs\index\TODO-INDEX.md (L24) — - docs\index\TODO-INDEX.md (L5) — - docs\index\index.json (L28) — "modules/CoFit/TODO.md": [],
+- docs\index\TODO-INDEX.md (L208) — - docs\index\TODO-INDEX.md (L84) — - docs\index\TODO-INDEX.md (L25) — - docs\index\TODO-INDEX.md (L6) — - docs\index\index.json (L31) — "modules/CoFit/docs/TODO.md": [],
+- docs\index\TODO-INDEX.md (L209) — - docs\index\TODO-INDEX.md (L85) — - docs\index\TODO-INDEX.md (L26) — - docs\index\TODO-INDEX.md (L7) — - docs\index\README.md (L22) — * [modules/CoFit/docs/TODO.md](../../modules/CoFit/docs/TODO.md)
+- docs\index\TODO-INDEX.md (L210) — - docs\index\TODO-INDEX.md (L86) — - docs\index\TODO-INDEX.md (L27) — - docs\index\TODO-INDEX.md (L8) — - docs\index\README.md (L26) — * [modules/CoFit/TODO.md](../../modules/CoFit/TODO.md)
+- docs\index\TODO-INDEX.md (L211) — - docs\index\TODO-INDEX.md (L87) — - docs\index\TODO-INDEX.md (L28) — - docs\index\TODO-INDEX.md (L9) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L212) — - docs\index\TODO-INDEX.md (L88) — - docs\index\TODO-INDEX.md (L29) — - docs\index\TODO-INDEX.md (L10) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L213) — - docs\index\TODO-INDEX.md (L89) — - docs\index\TODO-INDEX.md (L30) — - docs\index\TODO-INDEX.md (L11) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L214) — - docs\index\TODO-INDEX.md (L90) — - docs\index\TODO-INDEX.md (L31) — - docs\index\TODO-INDEX.md (L12) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L215) — - docs\index\TODO-INDEX.md (L91) — - docs\index\TODO-INDEX.md (L32) — - docs\index\TODO-INDEX.md (L13) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L216) — - docs\index\TODO-INDEX.md (L92) — - docs\index\TODO-INDEX.md (L33) — - docs\index\TODO-INDEX.md (L14) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L217) — - docs\index\TODO-INDEX.md (L93) — - docs\index\TODO-INDEX.md (L34) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 20 (TODO: 10)
+- docs\index\TODO-INDEX.md (L218) — - docs\index\TODO-INDEX.md (L94) — - docs\index\TODO-INDEX.md (L35) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L219) — - docs\index\TODO-INDEX.md (L95) — - docs\index\TODO-INDEX.md (L36) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L220) — - docs\index\TODO-INDEX.md (L96) — - docs\index\TODO-INDEX.md (L37) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L221) — - docs\index\TODO-INDEX.md (L97) — - docs\index\TODO-INDEX.md (L38) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L222) — - docs\index\TODO-INDEX.md (L98) — - docs\index\TODO-INDEX.md (L39) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L223) — - docs\index\TODO-INDEX.md (L99) — - docs\index\TODO-INDEX.md (L40) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L224) — - docs\index\TODO-INDEX.md (L100) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 56 (TODO: 36)
+- docs\index\TODO-INDEX.md (L225) — - docs\index\TODO-INDEX.md (L101) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L226) — - docs\index\TODO-INDEX.md (L102) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L227) — - docs\index\TODO-INDEX.md (L103) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L228) — - docs\index\TODO-INDEX.md (L104) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L229) — - docs\index\TODO-INDEX.md (L105) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L230) — - docs\index\TODO-INDEX.md (L106) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\index\TODO-INDEX.md (L231) — - docs\status\HEALTH.md (L6) — - Advice/TODO hits: 135 (TODO: 102)
+- docs\index\TODO-INDEX.md (L232) — - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
+- docs\index\TODO-INDEX.md (L233) — - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
+- docs\index\TODO-INDEX.md (L234) — - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
+- docs\index\TODO-INDEX.md (L235) — - modules\CoFit\HANDOFF.md (L13) — - ✅ Draft `TODO.md` with clear outlines
+- docs\index\TODO-INDEX.md (L236) — - modules\CoFit\HANDOFF.md (L20) — 1. Review `TODO.md` to understand next planned artifacts.
+- docs\index\TODO-INDEX.md (L237) — - modules\CoFit\TODO.md (L3) — # TODO: CoFit Engine (CivicFit)
+- docs\status\HEALTH.md (L6) — - Advice/TODO hits: 280 (TODO: 233)
 - FTWTG\DO-Process-CoQueue.ps1 (L37) — # TODO: do context-specific work here
 - FTWTG\DO-Process-CoQueue.ps1 (L40) — # TODO: do omni work here
 - modules\CoFit\docs\TODO.md (L3) — # CoFit TODO (Next Build Phase)
