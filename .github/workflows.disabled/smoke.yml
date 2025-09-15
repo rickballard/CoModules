@@ -1,0 +1,8 @@
+name: smoke (disabled)
+on:
+  workflow_dispatch:
+jobs:
+  _note:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Disabled by DO-GUARD. Move to .github/workflows/ to enable."
