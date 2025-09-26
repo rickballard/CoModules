@@ -1,0 +1,127 @@
+{
+  "updated": "2025-09-15T06:43:29.6969438Z",
+  "gm_open": 0,
+  "issues": [
+    {
+      "number": 26,
+      "title": "RFC-0001 (DO Header Spec v0.1) ΓÇö Public Comment $start ΓåÆ $end",
+      "createdAt": "2025-09-08T08:33:56Z",
+      "labels": [],
+      "url": "https://github.com/rickballard/CoModules/issues/26"
+    },
+    {
+      "number": 23,
+      "title": "Migration handoff pointer",
+      "createdAt": "2025-09-08T05:37:43Z",
+      "labels": [],
+      "url": "https://github.com/rickballard/CoModules/issues/23"
+    },
+    {
+      "number": 20,
+      "title": "Checkpoint 20250907-084853",
+      "createdAt": "2025-09-07T12:52:38Z",
+      "labels": [],
+      "url": "https://github.com/rickballard/CoModules/issues/20"
+    },
+    {
+      "number": 18,
+      "title": "Post-migration: enable minimal protections on main",
+      "createdAt": "2025-09-05T19:25:55Z",
+      "labels": [],
+      "url": "https://github.com/rickballard/CoModules/issues/18"
+    },
+    {
+      "number": 17,
+      "title": "Grand migration: apply BPOE/CoPing across repos",
+      "createdAt": "2025-09-05T19:25:53Z",
+      "labels": [],
+      "url": "https://github.com/rickballard/CoModules/issues/17"
+    }
+  ],
+  "branches": [
+    {
+      "date": "2025-08-23T16:19:19.0000000Z",
+      "name": "ai-registry/demo-bad-and-badge"
+    },
+    {
+      "date": "2025-08-24T02:09:18.0000000Z",
+      "name": "chore/sync-shared/20250823-2209"
+    },
+    {
+      "date": "2025-08-24T01:54:53.0000000Z",
+      "name": "ci/auto-add-to-project"
+    },
+    {
+      "date": "2025-08-24T22:08:24.0000000Z",
+      "name": "docs/absolute-pointing-bp-20250824"
+    },
+    {
+      "date": "2025-09-05T17:47:38.0000000Z",
+      "name": "docs/bdbp-coagent-250905"
+    },
+    {
+      "date": "2025-09-06T21:26:45.0000000Z",
+      "name": "docs/bdbp-coagent-250905-1400"
+    },
+    {
+      "date": "2025-09-08T06:37:47.0000000Z",
+      "name": "docs/crosslinks-c1"
+    },
+    {
+      "date": "2025-09-08T07:17:22.0000000Z",
+      "name": "docs/crosslinks-c1-v2"
+    },
+    {
+      "date": "2025-09-05T02:44:58.0000000Z",
+      "name": "docs/grand-migration-20250905"
+    },
+    {
+      "date": "2025-09-08T05:11:12.0000000Z",
+      "name": "docs/shared-cc-preamble-pointer-c1"
+    },
+    {
+      "date": "2025-09-07T12:48:56.0000000Z",
+      "name": "docs/tools-leverage-c1"
+    },
+    {
+      "date": "2025-09-15T06:15:49.0000000Z",
+      "name": "feat/ftw-guardian-mode-seed"
+    },
+    {
+      "date": "2025-08-27T19:58:22.0000000Z",
+      "name": "feature/cofit-seed"
+    },
+    {
+      "date": "2025-08-26T13:21:27.0000000Z",
+      "name": "feature/ftw-idea-card"
+    },
+    {
+      "date": "2025-09-11T21:02:47.0000000Z",
+      "name": "gm/CoModules-20250911-165926"
+    },
+    {
+      "date": "2025-09-11T21:14:56.0000000Z",
+      "name": "gm/CoModules-20250911-171118"
+    },
+    {
+      "date": "2025-09-11T21:57:58.0000000Z",
+      "name": "gm/CoModules-20250911-172359"
+    },
+    {
+      "date": "2025-09-10T17:22:51.0000000Z",
+      "name": "main"
+    },
+    {
+      "date": "2025-09-11T20:10:03.0000000Z",
+      "name": "ops/cobots-weekly-rotation"
+    },
+    {
+      "date": "2025-09-11T17:40:07.0000000Z",
+      "name": "refactor/seed-structure-20250911-133959"
+    },
+    {
+      "date": "2025-08-23T20:41:55.0000000Z",
+      "name": "temp/recover-839d85a"
+    }
+  ]
+}

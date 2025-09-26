@@ -1,0 +1,7 @@
+{"kind":"note","repo":"CoModules","tags":["ops","health"],"text":"Nightly refresh queued","ts":"2025-09-12T20:24:28.6200092Z"}
+{"kind":"note","repo":"CoModules","tags":["ops","health"],"text":"Nightly refresh queued","ts":"2025-09-12T20:29:55.9208065Z"}
+{"kind":"note","repo":"CoModules","tags":["ops","health"],"text":"Nightly refresh queued","ts":"2025-09-12T21:42:32.6467882Z"}
+{"repo":"CoModules","text":"UX: standardize 5 blank lines between CoPing/CoPong blocks in PS7 transcripts.","ts":"2025-09-13T17:42:57.6072114Z","kind":"note","tags":["ux","bpoe"]}
+{"repo":"CoModules","text":"UX: Adopt 'CoPong Demark' — 2 blank lines, rainbow rule with label, 2 blank lines. Use: CoPongDemark or alias 'cpd'.","ts":"2025-09-13T19:11:09.3398882Z","kind":"note","tags":["ux","bpoe"]}
+{"repo":"CoModules","text":"UX: Adopt 'CoPong Demark' — 2 blank lines, rainbow rule with label, 2 blank lines. Use: CoPongDemark or alias 'cpd'.","ts":"2025-09-13T19:19:19.2746391Z","kind":"note","tags":["ux","bpoe"]}
+{"repo":"CoModules","text":"CoTemp messages: use top-level 'inbox\\\\*.json' with keys: kind,to,session,tag,ts,summary,details.","tags":["ops","bpoe"],"kind":"note","ts":"2025-09-14T00:46:43.4511397Z"}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "lifeOS.routine.plan",
+  "type": "object",
+  "properties": {
+    "pillars": {
+      "type":"array",
+      "items":{"type":"string","enum":["food","movement","sleep","social"]},
+      "minItems":1
+    },
+    "routines": {
+      "type":"object",
+      "properties":{
+        "daily":{"type":"array","items":{"type":"string"}},
+        "weekly":{"type":"array","items":{"type":"string"}}
+      },
+      "required":["daily","weekly"],
+      "additionalProperties": false
+    },
+    "guardrails":{
+      "type":"array",
+      "items":{"type":"string"},
+      "description":"Values constraints; no coercion; privacy rules."
+    },
+    "outcomes":{
+      "type":"array",
+      "items":{"type":"string","enum":["energy","mood","sleep","labs","pain","focus"]}
+    }
+  },
+  "required":["pillars","routines"],
+  "additionalProperties": false
+}
