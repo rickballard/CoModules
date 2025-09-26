@@ -1,0 +1,27 @@
+name: gentle-checkins
+on:
+  schedule:
+    - cron: "0 15 * * 1"   # Mondays 15:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  open-checkins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open career check-in
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Career check-in (gentle nudge)"
+          content-filepath: .github/checkins/career.md
+          labels: "check-in, careerOS"
+      - name: Open life check-in
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Life check-in (gentle nudge)"
+          content-filepath: .github/checkins/life.md
+          labels: "check-in, lifeOS"
