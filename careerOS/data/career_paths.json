@@ -1,0 +1,24 @@
+{
+  "paths": [
+    {
+      "name": "API Enablement Engineer (AI-era)",
+      "proofs": ["convert legacy/internal feature to public API", "auth/rate/observability"],
+      "deliverables": ["API spec + tests", "Postman collection", "sample client", "gov checklist"]
+    },
+    {
+      "name": "Applied AI Integrator",
+      "proofs": ["retrieval pipeline", "safety/guardrails", "eval harness"],
+      "deliverables": ["demo app", "eval report", "operational playbook"]
+    },
+    {
+      "name": "Creative Tech Integrator",
+      "proofs": ["real-time media pipeline", "latency budget", "UX flow"],
+      "deliverables": ["live demo", "UX storyboard", "postmortem learnings"]
+    },
+    {
+      "name": "Entrepreneurial Builder",
+      "proofs": ["micro-SaaS revenue", "support queue metrics", "churn notes"],
+      "deliverables": ["lean canvas", "pricing tests", "customer interviews"]
+    }
+  ]
+}
